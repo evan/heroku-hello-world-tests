@@ -1,0 +1,33 @@
+ EC2 Instance: HTTPerf Machine (i-a93cd9cd)
+
+Description
+Status Checks
+Monitoring
+Tags
+AMI: amzn-ami-2011.09.2.x86_64-ebs (ami-1b814f72)	Zone: us-east-1a
+Security Groups: quicklaunch-1	Type: m1.large
+State: running	Scheduled Events:
+Owner: 957571668058	VPC ID: -
+Subnet ID: -	Source/Dest. Check:
+Virtualization: paravirtual	Placement Group:
+Reservation: r-21216b41	RAM Disk ID: -
+Platform: -	Key Pair Name: fauna-default-keypair
+Kernel ID: aki-825ea7eb	Monitoring: basic
+AMI Launch Index: 0	Elastic IP: -
+Root Device:
+Root Device Type: ebs
+Tenancy: default
+Lifecycle: normal
+Block Devices:
+Network Interfaces:
+Public DNS:
+Private DNS:	Private IP Address: -
+Launch Time: 2012-02-26 14:19 PST (less than an hour)
+State Transition Reason:
+
+ autobench --single_host --host1 java-tomcat.herokuapp.com --uri1 / --host2 java-tomcat.herokuapp.com --uri2 /servlet --low_rate 10 --high_rate 100 --rate_step 10 --num_call 10 --num_conn 5000 --timeout 10 --file results.tsv
+
+http://code.google.com/p/httperf/issues/attachmentText?id=15&aid=150000000&name=httperf-0.9.0-hogfix.patch&token=6d1c86ff869b68ec6b06b51adee5f853
+
+http://gom-jabbar.org/articles/2009/02/04/httperf-and-file-descriptors
+
