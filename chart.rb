@@ -2,9 +2,10 @@
 require 'csv'
 
 data = {}
-range_responses = 16000
+range_responses = 16250
 range_errors = 100
 range_response_time = 10000
+smoothness=0.2
 
 Dir['*.csv'].each do |file|
   CSV.foreach(file) do |line|
@@ -30,6 +31,7 @@ File.open('tmp/chart.r', 'w') do |file|
     range_responses = #{range_responses}
     range_response_time = #{range_response_time}
     range_errors = #{range_errors}
+    smoothness = #{smoothness}
     data = read.table('tmp/chart.csv', header=T, sep=',')
     attach(data)
     quartz('Throughput', 8, 6)
@@ -60,7 +62,7 @@ File.open('tmp/chart.r', 'w') do |file|
     file.puts <<-plotter
       par(new=T)
       plot(dem_req_rate, #{y}, ylim=c(0,range_responses), axes=F, ann=F, type='n')
-      smooth = smooth.spline(dem_req_rate, #{y}, spar=0.65)
+      smooth = smooth.spline(dem_req_rate, #{y}, spar=smoothness)
       lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=1)
     plotter
     i = i + 1
@@ -108,7 +110,7 @@ File.open('tmp/chart.r', 'w') do |file|
     file.puts <<-plotter
       par(new=T)
       plot(dem_req_rate, log10(#{y}), ylim=c(0,log10(range_response_time)), axes=F, ann=F, type='n')
-      smooth = smooth.spline(dem_req_rate, log10(#{y}), spar=0.65)
+      smooth = smooth.spline(dem_req_rate, log10(#{y}), spar=smoothness)
       lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=1)
     plotter
     i = i + 1

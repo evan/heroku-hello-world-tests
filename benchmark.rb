@@ -1,6 +1,8 @@
 
 login = "-i ~/.ssh/fauna-default-keypair.pem ec2-user@ec2-23-20-42-109.compute-1.amazonaws.com"
 
+system("rm *.csv")
+
 servers = [
   # App folder and subdomain, URL
   ["scala-finagle", "/"],
@@ -13,10 +15,10 @@ servers = [
 ]
 
 low = 100
-high = 650
+high = 600
 step = 10
 calls = 25
-test_time = 15
+test_time = 20
 
 puts servers.inspect
 
@@ -31,7 +33,7 @@ watcher = Thread.new do
     line = line.split(" ")
     if line[9].to_i > 1 # 1 minute
       puts "Killing #{line[1]} (#{line[9]} minutes)"
-      run "#{login} sudo kill #{line[1]}"
+      run "ssh #{login} sudo kill #{line[1]}"
     end
     sleep(30)
   end
