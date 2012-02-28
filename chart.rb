@@ -60,7 +60,7 @@ File.open('tmp/chart.r', 'w') do |file|
     file.puts <<-plotter
       par(new=T)
       plot(dem_req_rate, #{y}, ylim=c(0,range_responses), axes=F, ann=F, type='n')
-      smooth = smooth.spline(dem_req_rate, #{y}, spar=0.2)
+      smooth = smooth.spline(dem_req_rate, #{y}, spar=0.65)
       lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=1)
     plotter
     i = i + 1
@@ -92,7 +92,7 @@ File.open('tmp/chart.r', 'w') do |file|
     axis(4)
 
     title(xlab="Requests per second", ylab="Responses per second")
-    title(ylab="% errors", line=-34)
+    title(ylab="% connection errors", line=-34)
 
     box()
   postamble
@@ -123,7 +123,7 @@ File.open('tmp/chart.r', 'w') do |file|
     title(xlab="Requests per second", ylab="Milliseconds (log scale)")
 
     box()
-    Sys.sleep(10)
+    Sys.sleep(30)
   postamble
 end
 
