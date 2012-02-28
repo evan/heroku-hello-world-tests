@@ -1,24 +1,23 @@
 
 login = "-i ~/.ssh/fauna-default-keypair.pem ec2-user@ec2-23-20-42-109.compute-1.amazonaws.com"
 
-system("rm *.csv")
-
 servers = [
   # App folder and subdomain, URL
   ["scala-finagle", "/"],
   ["c-c", "/"],
   ["java-jetty", "/"],
   [ "js-node", "/"],
-  ["python-bottle", "/"],
   ["ruby-sinatr", "/"],
-  ["java-tomcat", "/servlet"]
+  ["java-tomcat", "/servlet"],
+  ["python-bottle", "/"]
 ]
 
-low = 100
-high = 600
-step = 10
+dynos = 3
+low = 20 * dynos
+high = 120 * dynos
+step = 5 * dynos
 calls = 25
-test_time = 20
+test_time = 30
 
 puts servers.inspect
 
@@ -35,7 +34,7 @@ watcher = Thread.new do
       puts "Killing #{line[1]} (#{line[9]} minutes)"
       run "ssh #{login} sudo kill #{line[1]}"
     end
-    sleep(30)
+    sleep(5)
   end
 end
 
@@ -46,7 +45,7 @@ servers.each do |prefix, uri|
 
   puts "*** #{prefix} ***"
   File.unlink(output) if File.exist?(output)
-  run("cd #{prefix} && heroku restart && heroku ps:scale web=5")
+  run("cd #{prefix} && heroku restart && heroku ps:scale web=#{dynos}")
   sleep(1)
   run("ssh #{login} #{command}")
   run("cd #{prefix} && heroku ps:scale web=1")
