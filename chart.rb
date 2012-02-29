@@ -5,10 +5,10 @@ data = {}
 range_responses = 16250
 range_errors = 100
 range_response_time = 10000
-smoothness=0.75
+smoothness=0.6
 
-folder = ARGV[0] || "."
-dynos = ARGV[1].to_i
+folder = ARGV[0]
+dynos = folder[/(\d+)/, 1].to_i
 
 title = "HTTP hello-world on Heroku with #{dynos} Dyno#{'s' if dynos > 1}"
 
