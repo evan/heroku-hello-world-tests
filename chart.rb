@@ -6,9 +6,11 @@ range_responses = 16250
 range_errors = 100
 range_response_time = 10000
 smoothness=0.2
-dynos=3
 
-Dir['*.csv'].each do |file|
+folder = ARGV[0] || "."
+dynos = ARGV[1] || "?"
+
+Dir["#{folder}/*.csv"].each do |file|
   CSV.foreach(file) do |line|
     line[7] = range_response_time if !line[7]
     line.map! {|n| n || 0}

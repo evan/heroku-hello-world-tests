@@ -12,7 +12,7 @@ servers = [
   ["python-bottle", "/"]
 ]
 
-dynos = 3
+dynos = 1
 low = 20 * dynos
 high = 120 * dynos
 step = 5 * dynos
