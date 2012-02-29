@@ -5,7 +5,8 @@ data = {}
 range_responses = 16250
 range_errors = 100
 range_response_time = 10000
-smoothness=0.65
+smoothness=0.2
+dynos=3
 
 Dir['*.csv'].each do |file|
   CSV.foreach(file) do |line|
@@ -84,7 +85,7 @@ File.open('tmp/chart.r', 'w') do |file|
     par(new=T)
     plot(dem_req_rate, dem_req_rate, ylim=c(0,range_responses), axes=F, ann=F, type='n')
     abline(0,1, lty=3, col='gray')
-    title(main='Throughput of HTTP hello-world on Heroku with N Dynos')
+    title(main='Throughput of HTTP hello-world on Heroku with #{dynos} Dynos')
     axis(1)
     axis(2)
     legend(range_responses/6.5, range_responses, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22)
@@ -118,7 +119,7 @@ File.open('tmp/chart.r', 'w') do |file|
 
   file.puts <<-postamble
     par(new=T)
-    title(main='Latency of HTTP hello-world on Heroku with N Dynos')
+    title(main='Latency of HTTP hello-world on Heroku with #{dynos} Dynos')
     axis(1)
     axis(2, at=axTicks(2), c(0, 10, 100, 1000, 10000))
     legend(range_responses*0.76, log10(range_response_time)*0.35, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22)
