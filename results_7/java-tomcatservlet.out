@@ -1,0 +1,389 @@
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=140 --send-buffer=4096 --recv-buffer=16384 --num-conns=4200 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 4200 requests 104900 replies 104893 test-duration 39.102 s
+
+Connection rate: 107.4 conn/s (9.3 ms/conn, <=1900 concurrent connections)
+Connection time [ms]: min 31.1 avg 10305.5 max 35202.6 median 10547.5 stddev 7692.2
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 24.980
+
+Request rate: 2682.7 req/s (0.4 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 112.0 avg 2689.5 max 7541.9 stddev 2261.0 (78 samples)
+Reply time [ms]: response 411.8 transfer 0.1
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=104877 3xx=0 4xx=0 5xx=16
+
+CPU time [s]: user 2.11 system 36.95 (user 5.4% system 94.5% total 99.9%)
+Net I/O: 621.6 KB/s (5.1*10^6 bps)
+
+Errors: total 7 client-timo 2 socket-timo 0 connrefused 0 connreset 5
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=210 --send-buffer=4096 --recv-buffer=16384 --num-conns=6300 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6300 requests 157500 replies 157500 test-duration 30.444 s
+
+Connection rate: 206.9 conn/s (4.8 ms/conn, <=326 concurrent connections)
+Connection time [ms]: min 230.7 avg 613.8 max 4519.7 median 516.5 stddev 438.5
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 25.000
+
+Request rate: 5173.4 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 2010.1 avg 5199.8 max 8062.4 stddev 1200.1 (60 samples)
+Reply time [ms]: response 24.4 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=157500 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.35 system 26.06 (user 14.3% system 85.6% total 99.9%)
+Net I/O: 1198.1 KB/s (9.8*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=280 --send-buffer=4096 --recv-buffer=16384 --num-conns=8400 --num-calls=25
+Maximum connect burst length: 9
+
+Total: connections 8400 requests 209921 replies 209913 test-duration 32.144 s
+
+Connection rate: 261.3 conn/s (3.8 ms/conn, <=661 concurrent connections)
+Connection time [ms]: min 70.9 avg 1371.4 max 13085.9 median 1088.5 stddev 1257.6
+Connection time [ms]: connect 1.7
+Connection length [replies/conn]: 24.990
+
+Request rate: 6530.6 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6559.4 max 8330.0 stddev 1558.6 (64 samples)
+Reply time [ms]: response 54.8 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=209913 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.99 system 29.12 (user 9.3% system 90.6% total 99.9%)
+Net I/O: 1512.4 KB/s (12.4*10^6 bps)
+
+Errors: total 8 client-timo 0 socket-timo 0 connrefused 0 connreset 8
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=350 --send-buffer=4096 --recv-buffer=16384 --num-conns=10500 --num-calls=25
+Maximum connect burst length: 13
+
+Total: connections 10500 requests 262429 replies 262424 test-duration 34.992 s
+
+Connection rate: 300.1 conn/s (3.3 ms/conn, <=1649 concurrent connections)
+Connection time [ms]: min 195.9 avg 3253.1 max 14460.4 median 2877.5 stddev 1774.9
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 24.993
+
+Request rate: 7499.7 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 7603.5 max 9260.5 stddev 2034.5 (69 samples)
+Reply time [ms]: response 130.0 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=262424 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.29 system 32.68 (user 6.5% system 93.4% total 99.9%)
+Net I/O: 1736.5 KB/s (14.2*10^6 bps)
+
+Errors: total 5 client-timo 0 socket-timo 0 connrefused 0 connreset 5
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=420 --send-buffer=4096 --recv-buffer=16384 --num-conns=12600 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 12600 requests 314846 replies 314835 test-duration 50.933 s
+
+Connection rate: 247.4 conn/s (4.0 ms/conn, <=3030 concurrent connections)
+Connection time [ms]: min 69.4 avg 4374.4 max 32951.8 median 3686.5 stddev 3612.2
+Connection time [ms]: connect 6.2
+Connection length [replies/conn]: 24.987
+
+Request rate: 6181.6 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6234.7 max 10304.8 stddev 4163.5 (101 samples)
+Reply time [ms]: response 174.8 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=314835 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 5.52 system 45.36 (user 10.8% system 89.1% total 99.9%)
+Net I/O: 1430.9 KB/s (11.7*10^6 bps)
+
+Errors: total 11 client-timo 0 socket-timo 0 connrefused 0 connreset 11
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=490 --send-buffer=4096 --recv-buffer=16384 --num-conns=14700 --num-calls=25
+Maximum connect burst length: 10
+
+Total: connections 14700 requests 362210 replies 361790 test-duration 55.025 s
+
+Connection rate: 267.2 conn/s (3.7 ms/conn, <=8586 concurrent connections)
+Connection time [ms]: min 304.4 avg 15726.2 max 46649.5 median 17239.5 stddev 8768.4
+Connection time [ms]: connect 3.6
+Connection length [replies/conn]: 24.660
+
+Request rate: 6582.7 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6633.7 max 9980.1 stddev 2632.9 (109 samples)
+Reply time [ms]: response 637.2 transfer 0.3
+Reply size [B]: header 128.0 content 45.0 footer 0.0 (total 173.0)
+Reply status: 1xx=0 2xx=349336 3xx=0 4xx=0 5xx=12454
+
+CPU time [s]: user 3.23 system 51.75 (user 5.9% system 94.1% total 99.9%)
+Net I/O: 1661.8 KB/s (13.6*10^6 bps)
+
+Errors: total 420 client-timo 0 socket-timo 0 connrefused 0 connreset 420
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=560 --send-buffer=4096 --recv-buffer=16384 --num-conns=16800 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 16800 requests 332673 replies 326515 test-duration 60.100 s
+
+Connection rate: 279.5 conn/s (3.6 ms/conn, <=6757 concurrent connections)
+Connection time [ms]: min 53.9 avg 9504.6 max 42865.7 median 8946.5 stddev 6308.7
+Connection time [ms]: connect 6.9
+Connection length [replies/conn]: 19.923
+
+Request rate: 5535.4 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 5439.3 max 10653.4 stddev 3922.7 (120 samples)
+Reply time [ms]: response 474.4 transfer 0.3
+Reply size [B]: header 129.0 content 51.0 footer 0.0 (total 180.0)
+Reply status: 1xx=0 2xx=311836 3xx=0 4xx=0 5xx=14679
+
+CPU time [s]: user 4.63 system 55.40 (user 7.7% system 92.2% total 99.9%)
+Net I/O: 1416.0 KB/s (11.6*10^6 bps)
+
+Errors: total 6158 client-timo 0 socket-timo 0 connrefused 0 connreset 6158
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=630 --send-buffer=4096 --recv-buffer=16384 --num-conns=18900 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 18900 requests 396905 replies 391409 test-duration 45.147 s
+
+Connection rate: 418.6 conn/s (2.4 ms/conn, <=7723 concurrent connections)
+Connection time [ms]: min 16.3 avg 10647.7 max 32114.4 median 10913.5 stddev 5959.8
+Connection time [ms]: connect 4.1
+Connection length [replies/conn]: 21.029
+
+Request rate: 8791.4 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 72.0 avg 8690.3 max 11328.8 stddev 2991.5 (90 samples)
+Reply time [ms]: response 504.2 transfer 0.4
+Reply size [B]: header 129.0 content 51.0 footer 0.0 (total 180.0)
+Reply status: 1xx=0 2xx=373736 3xx=0 4xx=0 5xx=17673
+
+CPU time [s]: user 2.86 system 42.24 (user 6.3% system 93.6% total 99.9%)
+Net I/O: 2257.4 KB/s (18.5*10^6 bps)
+
+Errors: total 5496 client-timo 0 socket-timo 0 connrefused 0 connreset 5496
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=700 --send-buffer=4096 --recv-buffer=16384 --num-conns=21000 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 21000 requests 524271 replies 524195 test-duration 47.906 s
+
+Connection rate: 438.4 conn/s (2.3 ms/conn, <=6608 concurrent connections)
+Connection time [ms]: min 364.9 avg 8804.8 max 23463.3 median 8854.5 stddev 2901.7
+Connection time [ms]: connect 24.2
+Connection length [replies/conn]: 24.964
+
+Request rate: 10943.8 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 50.0 avg 11028.4 max 21215.6 stddev 6875.7 (95 samples)
+Reply time [ms]: response 351.7 transfer 0.0
+Reply size [B]: header 120.0 content 14.0 footer 0.0 (total 134.0)
+Reply status: 1xx=0 2xx=304439 3xx=0 4xx=0 5xx=219756
+
+CPU time [s]: user 3.46 system 44.40 (user 7.2% system 92.7% total 99.9%)
+Net I/O: 2349.9 KB/s (19.3*10^6 bps)
+
+Errors: total 76 client-timo 0 socket-timo 0 connrefused 0 connreset 76
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 770
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=840 --send-buffer=4096 --recv-buffer=16384 --num-conns=25200 --num-calls=25
+Maximum connect burst length: 25
+
+Total: connections 25200 requests 628242 replies 628132 test-duration 48.846 s
+
+Connection rate: 515.9 conn/s (1.9 ms/conn, <=11335 concurrent connections)
+Connection time [ms]: min 124.7 avg 11659.9 max 45170.4 median 10951.5 stddev 4643.0
+Connection time [ms]: connect 582.5
+Connection length [replies/conn]: 24.935
+
+Request rate: 12861.7 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 12930.7 max 20905.4 stddev 6417.7 (97 samples)
+Reply time [ms]: response 443.1 transfer 0.0
+Reply size [B]: header 118.0 content 12.0 footer 0.0 (total 130.0)
+Reply status: 1xx=0 2xx=301991 3xx=0 4xx=0 5xx=326141
+
+CPU time [s]: user 4.24 system 44.56 (user 8.7% system 91.2% total 99.9%)
+Net I/O: 2709.3 KB/s (22.2*10^6 bps)
+
+Errors: total 115 client-timo 27 socket-timo 0 connrefused 0 connreset 88
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=910 --send-buffer=4096 --recv-buffer=16384 --num-conns=27300 --num-calls=25
+Maximum connect burst length: 15
+
+Total: connections 27300 requests 523509 replies 512094 test-duration 62.500 s
+
+Connection rate: 436.8 conn/s (2.3 ms/conn, <=14215 concurrent connections)
+Connection time [ms]: min 15.1 avg 12464.3 max 53564.1 median 12381.5 stddev 7433.0
+Connection time [ms]: connect 488.6
+Connection length [replies/conn]: 19.293
+
+Request rate: 8376.1 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 8245.6 max 22987.6 stddev 6041.0 (124 samples)
+Reply time [ms]: response 610.5 transfer 0.7
+Reply size [B]: header 123.0 content 40.0 footer 0.0 (total 163.0)
+Reply status: 1xx=0 2xx=327681 3xx=0 4xx=0 5xx=184413
+
+CPU time [s]: user 5.07 system 57.37 (user 8.1% system 91.8% total 99.9%)
+Net I/O: 2005.6 KB/s (16.4*10^6 bps)
+
+Errors: total 11415 client-timo 38 socket-timo 0 connrefused 0 connreset 11377
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=980 --send-buffer=4096 --recv-buffer=16384 --num-conns=29400 --num-calls=25
+Maximum connect burst length: 66
+
+Total: connections 29400 requests 572576 replies 561827 test-duration 64.350 s
+
+Connection rate: 456.9 conn/s (2.2 ms/conn, <=14720 concurrent connections)
+Connection time [ms]: min 82.9 avg 14562.6 max 51510.4 median 14353.5 stddev 8461.1
+Connection time [ms]: connect 209.0
+Connection length [replies/conn]: 19.708
+
+Request rate: 8897.8 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 8764.0 max 22004.0 stddev 6211.8 (128 samples)
+Reply time [ms]: response 711.6 transfer 1.8
+Reply size [B]: header 122.0 content 31.0 footer 0.0 (total 153.0)
+Reply status: 1xx=0 2xx=353151 3xx=0 4xx=0 5xx=208676
+
+CPU time [s]: user 4.94 system 59.34 (user 7.7% system 92.2% total 99.9%)
+Net I/O: 2055.7 KB/s (16.8*10^6 bps)
+
+Errors: total 10749 client-timo 168 socket-timo 0 connrefused 0 connreset 10581
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 1050
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1120
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1190
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=1260 --send-buffer=4096 --recv-buffer=16384 --num-conns=37800 --num-calls=25
+Maximum connect burst length: 15
+
+Total: connections 37800 requests 451353 replies 422091 test-duration 58.468 s
+
+Connection rate: 646.5 conn/s (1.5 ms/conn, <=10547 concurrent connections)
+Connection time [ms]: min 20.9 avg 8001.1 max 53239.4 median 5070.5 stddev 8021.0
+Connection time [ms]: connect 5.3
+Connection length [replies/conn]: 12.254
+
+Request rate: 7719.6 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 7271.3 max 23409.5 stddev 4433.7 (116 samples)
+Reply time [ms]: response 645.3 transfer 0.3
+Reply size [B]: header 138.0 content 172.0 footer 0.0 (total 310.0)
+Reply status: 1xx=0 2xx=294492 3xx=0 4xx=0 5xx=127599
+
+CPU time [s]: user 3.39 system 55.01 (user 5.8% system 94.1% total 99.9%)
+Net I/O: 2833.6 KB/s (23.2*10^6 bps)
+
+Errors: total 29262 client-timo 12 socket-timo 0 connrefused 0 connreset 29250
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 1330
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1400
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1470
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1540
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1610
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1680
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.

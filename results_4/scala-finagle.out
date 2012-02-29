@@ -1,0 +1,529 @@
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=80 --send-buffer=4096 --recv-buffer=16384 --num-conns=2400 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 2400 requests 60000 replies 60000 test-duration 30.278 s
+
+Connection rate: 79.3 conn/s (12.6 ms/conn, <=494 concurrent connections)
+Connection time [ms]: min 193.1 avg 2547.9 max 16750.8 median 662.5 stddev 3627.4
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 25.000
+
+Request rate: 1981.6 req/s (0.5 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 1991.0 max 4058.5 stddev 1014.1 (60 samples)
+Reply time [ms]: response 101.6 transfer 0.3
+Reply size [B]: header 69.0 content 18.0 footer 1.0 (total 88.0)
+Reply status: 1xx=0 2xx=60000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.63 system 25.61 (user 15.3% system 84.6% total 99.9%)
+Net I/O: 323.9 KB/s (2.7*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=120 --send-buffer=4096 --recv-buffer=16384 --num-conns=3600 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 3600 requests 90000 replies 90000 test-duration 30.363 s
+
+Connection rate: 118.6 conn/s (8.4 ms/conn, <=54 concurrent connections)
+Connection time [ms]: min 154.4 avg 265.0 max 561.5 median 252.5 stddev 56.1
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 25.000
+
+Request rate: 2964.1 req/s (0.3 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 1707.5 avg 2989.7 max 3384.3 stddev 225.4 (60 samples)
+Reply time [ms]: response 10.3 transfer 0.2
+Reply size [B]: header 69.0 content 18.0 footer 1.0 (total 88.0)
+Reply status: 1xx=0 2xx=90000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 8.66 system 21.65 (user 28.5% system 71.3% total 99.9%)
+Net I/O: 486.3 KB/s (4.0*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=160 --send-buffer=4096 --recv-buffer=16384 --num-conns=4800 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 4800 requests 120000 replies 120000 test-duration 33.150 s
+
+Connection rate: 144.8 conn/s (6.9 ms/conn, <=143 concurrent connections)
+Connection time [ms]: min 170.6 avg 377.1 max 6335.0 median 278.5 stddev 498.5
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 25.000
+
+Request rate: 3620.0 req/s (0.3 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 3636.1 max 5580.6 stddev 1150.2 (66 samples)
+Reply time [ms]: response 14.8 transfer 0.2
+Reply size [B]: header 69.0 content 18.0 footer 1.0 (total 88.0)
+Reply status: 1xx=0 2xx=120000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 7.84 system 25.28 (user 23.7% system 76.3% total 99.9%)
+Net I/O: 593.0 KB/s (4.9*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=6000 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6000 requests 149962 replies 149959 test-duration 41.050 s
+
+Connection rate: 146.2 conn/s (6.8 ms/conn, <=1226 concurrent connections)
+Connection time [ms]: min 152.3 avg 4086.3 max 29745.1 median 1615.5 stddev 4843.9
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 24.997
+
+Request rate: 3653.2 req/s (0.3 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 3657.6 max 7198.4 stddev 1964.0 (82 samples)
+Reply time [ms]: response 162.9 transfer 0.5
+Reply size [B]: header 68.0 content 18.0 footer 1.0 (total 87.0)
+Reply status: 1xx=0 2xx=149948 3xx=0 4xx=0 5xx=11
+
+CPU time [s]: user 3.26 system 37.74 (user 8.0% system 91.9% total 99.9%)
+Net I/O: 595.0 KB/s (4.9*10^6 bps)
+
+Errors: total 3 client-timo 0 socket-timo 0 connrefused 0 connreset 3
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=240 --send-buffer=4096 --recv-buffer=16384 --num-conns=7200 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 7200 requests 178918 replies 178837 test-duration 44.198 s
+
+Connection rate: 162.9 conn/s (6.1 ms/conn, <=3165 concurrent connections)
+Connection time [ms]: min 16.0 avg 11236.3 max 37290.6 median 10551.5 stddev 5900.6
+Connection time [ms]: connect 2.7
+Connection length [replies/conn]: 24.852
+
+Request rate: 4048.1 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 4064.4 max 9232.2 stddev 2121.7 (88 samples)
+Reply time [ms]: response 447.1 transfer 4.9
+Reply size [B]: header 77.0 content 67.0 footer 1.0 (total 145.0)
+Reply status: 1xx=0 2xx=163699 3xx=0 4xx=0 5xx=15138
+
+CPU time [s]: user 2.89 system 41.25 (user 6.5% system 93.3% total 99.9%)
+Net I/O: 891.6 KB/s (7.3*10^6 bps)
+
+Errors: total 81 client-timo 0 socket-timo 0 connrefused 0 connreset 81
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=280 --send-buffer=4096 --recv-buffer=16384 --num-conns=8400 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 8400 requests 207209 replies 206994 test-duration 44.087 s
+
+Connection rate: 190.5 conn/s (5.2 ms/conn, <=3322 concurrent connections)
+Connection time [ms]: min 12.9 avg 11050.7 max 40471.5 median 10357.5 stddev 6086.8
+Connection time [ms]: connect 2.8
+Connection length [replies/conn]: 24.672
+
+Request rate: 4700.0 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 4704.5 max 9288.4 stddev 2512.9 (88 samples)
+Reply time [ms]: response 444.4 transfer 3.4
+Reply size [B]: header 87.0 content 127.0 footer 1.0 (total 215.0)
+Reply status: 1xx=0 2xx=168362 3xx=0 4xx=0 5xx=38632
+
+CPU time [s]: user 2.50 system 41.55 (user 5.7% system 94.2% total 99.9%)
+Net I/O: 1357.2 KB/s (11.1*10^6 bps)
+
+Errors: total 215 client-timo 0 socket-timo 0 connrefused 0 connreset 215
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=320 --send-buffer=4096 --recv-buffer=16384 --num-conns=9600 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 9600 requests 233318 replies 232754 test-duration 48.378 s
+
+Connection rate: 198.4 conn/s (5.0 ms/conn, <=3751 concurrent connections)
+Connection time [ms]: min 16.1 avg 10446.0 max 40750.2 median 9656.5 stddev 6475.6
+Connection time [ms]: connect 3.2
+Connection length [replies/conn]: 24.301
+
+Request rate: 4822.8 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 4848.4 max 10860.4 stddev 3155.5 (96 samples)
+Reply time [ms]: response 427.0 transfer 2.3
+Reply size [B]: header 103.0 content 214.0 footer 0.0 (total 317.0)
+Reply status: 1xx=0 2xx=155013 3xx=0 4xx=0 5xx=77741
+
+CPU time [s]: user 3.24 system 45.08 (user 6.7% system 93.2% total 99.9%)
+Net I/O: 1870.5 KB/s (15.3*10^6 bps)
+
+Errors: total 564 client-timo 3 socket-timo 0 connrefused 0 connreset 561
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=360 --send-buffer=4096 --recv-buffer=16384 --num-conns=10800 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 10800 requests 266690 replies 266417 test-duration 39.955 s
+
+Connection rate: 270.3 conn/s (3.7 ms/conn, <=3438 concurrent connections)
+Connection time [ms]: min 9.9 avg 8276.4 max 32450.6 median 7617.5 stddev 4690.3
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 24.689
+
+Request rate: 6674.8 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 6737.1 max 12413.3 stddev 3503.2 (79 samples)
+Reply time [ms]: response 322.0 transfer 13.2
+Reply size [B]: header 82.0 content 97.0 footer 1.0 (total 180.0)
+Reply status: 1xx=0 2xx=230573 3xx=0 4xx=0 5xx=35844
+
+CPU time [s]: user 2.42 system 37.48 (user 6.1% system 93.8% total 99.9%)
+Net I/O: 1691.6 KB/s (13.9*10^6 bps)
+
+Errors: total 273 client-timo 0 socket-timo 0 connrefused 0 connreset 273
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=12000 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 12000 requests 299733 replies 299711 test-duration 41.272 s
+
+Connection rate: 290.8 conn/s (3.4 ms/conn, <=2806 concurrent connections)
+Connection time [ms]: min 79.3 avg 4361.3 max 23041.2 median 3838.5 stddev 3597.3
+Connection time [ms]: connect 3.4
+Connection length [replies/conn]: 24.976
+
+Request rate: 7262.4 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 7310.2 max 11377.7 stddev 3077.1 (82 samples)
+Reply time [ms]: response 168.2 transfer 6.3
+Reply size [B]: header 67.0 content 22.0 footer 0.0 (total 89.0)
+Reply status: 1xx=0 2xx=297512 3xx=0 4xx=0 5xx=2199
+
+CPU time [s]: user 3.31 system 37.92 (user 8.0% system 91.9% total 99.9%)
+Net I/O: 1203.4 KB/s (9.9*10^6 bps)
+
+Errors: total 22 client-timo 0 socket-timo 0 connrefused 0 connreset 22
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=440 --send-buffer=4096 --recv-buffer=16384 --num-conns=13200 --num-calls=25
+Maximum connect burst length: 9
+
+Total: connections 13200 requests 310688 replies 309162 test-duration 55.359 s
+
+Connection rate: 238.4 conn/s (4.2 ms/conn, <=3865 concurrent connections)
+Connection time [ms]: min 11.9 avg 8523.1 max 37196.6 median 7565.5 stddev 5672.6
+Connection time [ms]: connect 3.1
+Connection length [replies/conn]: 23.537
+
+Request rate: 5612.2 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 5620.6 max 11044.4 stddev 3989.6 (110 samples)
+Reply time [ms]: response 359.3 transfer 2.6
+Reply size [B]: header 102.0 content 215.0 footer 0.0 (total 317.0)
+Reply status: 1xx=0 2xx=205408 3xx=0 4xx=0 5xx=103754
+
+CPU time [s]: user 5.12 system 50.18 (user 9.3% system 90.6% total 99.9%)
+Net I/O: 2175.7 KB/s (17.8*10^6 bps)
+
+Errors: total 1526 client-timo 0 socket-timo 0 connrefused 0 connreset 1526
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=480 --send-buffer=4096 --recv-buffer=16384 --num-conns=14400 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 14400 requests 297027 replies 292236 test-duration 47.853 s
+
+Connection rate: 300.9 conn/s (3.3 ms/conn, <=4072 concurrent connections)
+Connection time [ms]: min 10.6 avg 8600.2 max 35122.8 median 7901.5 stddev 5481.7
+Connection time [ms]: connect 3.8
+Connection length [replies/conn]: 20.650
+
+Request rate: 6207.0 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 6152.0 max 10557.1 stddev 3614.1 (95 samples)
+Reply time [ms]: response 408.5 transfer 7.6
+Reply size [B]: header 100.0 content 204.0 footer 0.0 (total 304.0)
+Reply status: 1xx=0 2xx=199728 3xx=0 4xx=0 5xx=92508
+
+CPU time [s]: user 2.91 system 44.90 (user 6.1% system 93.8% total 99.9%)
+Net I/O: 2305.8 KB/s (18.9*10^6 bps)
+
+Errors: total 4791 client-timo 0 socket-timo 0 connrefused 0 connreset 4791
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=520 --send-buffer=4096 --recv-buffer=16384 --num-conns=15600 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 15600 requests 287833 replies 280419 test-duration 50.040 s
+
+Connection rate: 311.8 conn/s (3.2 ms/conn, <=4193 concurrent connections)
+Connection time [ms]: min 13.6 avg 7196.1 max 38639.4 median 5730.5 stddev 5973.9
+Connection time [ms]: connect 4.7
+Connection length [replies/conn]: 18.506
+
+Request rate: 5752.1 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 5608.8 max 10172.8 stddev 3695.7 (100 samples)
+Reply time [ms]: response 373.7 transfer 13.1
+Reply size [B]: header 93.0 content 162.0 footer 0.0 (total 255.0)
+Reply status: 1xx=0 2xx=211569 3xx=0 4xx=0 5xx=68850
+
+CPU time [s]: user 3.37 system 46.62 (user 6.7% system 93.2% total 99.9%)
+Net I/O: 1849.8 KB/s (15.2*10^6 bps)
+
+Errors: total 7414 client-timo 13 socket-timo 0 connrefused 0 connreset 7401
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=560 --send-buffer=4096 --recv-buffer=16384 --num-conns=16800 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 16800 requests 301642 replies 293143 test-duration 48.384 s
+
+Connection rate: 347.2 conn/s (2.9 ms/conn, <=4171 concurrent connections)
+Connection time [ms]: min 11.9 avg 6935.9 max 36859.5 median 5828.5 stddev 5387.7
+Connection time [ms]: connect 3.8
+Connection length [replies/conn]: 18.072
+
+Request rate: 6234.3 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 6106.0 max 10527.5 stddev 3782.9 (96 samples)
+Reply time [ms]: response 373.8 transfer 9.3
+Reply size [B]: header 91.0 content 151.0 footer 0.0 (total 242.0)
+Reply status: 1xx=0 2xx=226700 3xx=0 4xx=0 5xx=66443
+
+CPU time [s]: user 3.76 system 44.57 (user 7.8% system 92.1% total 99.9%)
+Net I/O: 1923.1 KB/s (15.8*10^6 bps)
+
+Errors: total 8499 client-timo 0 socket-timo 0 connrefused 0 connreset 8499
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=600 --send-buffer=4096 --recv-buffer=16384 --num-conns=18000 --num-calls=25
+Maximum connect burst length: 16
+
+Total: connections 18000 requests 316001 replies 306585 test-duration 52.999 s
+
+Connection rate: 339.6 conn/s (2.9 ms/conn, <=4608 concurrent connections)
+Connection time [ms]: min 18.7 avg 8246.1 max 47270.1 median 6599.5 stddev 7067.1
+Connection time [ms]: connect 6.1
+Connection length [replies/conn]: 17.647
+
+Request rate: 5962.4 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 180.0 avg 5834.7 max 11401.4 stddev 3906.3 (105 samples)
+Reply time [ms]: response 453.4 transfer 5.1
+Reply size [B]: header 113.0 content 278.0 footer 0.0 (total 391.0)
+Reply status: 1xx=0 2xx=171072 3xx=0 4xx=0 5xx=135513
+
+CPU time [s]: user 2.83 system 50.13 (user 5.3% system 94.6% total 99.9%)
+Net I/O: 2681.5 KB/s (22.0*10^6 bps)
+
+Errors: total 9416 client-timo 90 socket-timo 0 connrefused 0 connreset 9326
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=640 --send-buffer=4096 --recv-buffer=16384 --num-conns=19200 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 19200 requests 324352 replies 313665 test-duration 47.717 s
+
+Connection rate: 402.4 conn/s (2.5 ms/conn, <=4418 concurrent connections)
+Connection time [ms]: min 8.9 avg 7387.6 max 45960.8 median 6342.5 stddev 5875.7
+Connection time [ms]: connect 4.1
+Connection length [replies/conn]: 16.953
+
+Request rate: 6797.4 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 6601.9 max 10979.5 stddev 3875.9 (95 samples)
+Reply time [ms]: response 428.8 transfer 6.5
+Reply size [B]: header 116.0 content 292.0 footer 0.0 (total 408.0)
+Reply status: 1xx=0 2xx=167661 3xx=0 4xx=0 5xx=146004
+
+CPU time [s]: user 3.11 system 44.57 (user 6.5% system 93.4% total 99.9%)
+Net I/O: 3153.1 KB/s (25.8*10^6 bps)
+
+Errors: total 10687 client-timo 0 socket-timo 0 connrefused 0 connreset 10687
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=680 --send-buffer=4096 --recv-buffer=16384 --num-conns=20400 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 20400 requests 366082 replies 355844 test-duration 49.543 s
+
+Connection rate: 411.8 conn/s (2.4 ms/conn, <=4332 concurrent connections)
+Connection time [ms]: min 10.3 avg 6345.7 max 35638.5 median 5381.5 stddev 5071.6
+Connection time [ms]: connect 3.4
+Connection length [replies/conn]: 17.971
+
+Request rate: 7389.1 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 7188.0 max 11877.3 stddev 4519.9 (99 samples)
+Reply time [ms]: response 338.4 transfer 14.3
+Reply size [B]: header 96.0 content 179.0 footer 0.0 (total 275.0)
+Reply status: 1xx=0 2xx=258248 3xx=0 4xx=0 5xx=97596
+
+CPU time [s]: user 3.69 system 45.81 (user 7.5% system 92.5% total 99.9%)
+Net I/O: 2512.4 KB/s (20.6*10^6 bps)
+
+Errors: total 10238 client-timo 0 socket-timo 0 connrefused 0 connreset 10238
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=720 --send-buffer=4096 --recv-buffer=16384 --num-conns=21600 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 21600 requests 350459 replies 337412 test-duration 52.993 s
+
+Connection rate: 407.6 conn/s (2.5 ms/conn, <=4531 concurrent connections)
+Connection time [ms]: min 13.6 avg 6374.2 max 49688.9 median 4641.5 stddev 6138.1
+Connection time [ms]: connect 9.9
+Connection length [replies/conn]: 16.278
+
+Request rate: 6613.4 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 2.0 avg 6425.9 max 11480.7 stddev 4684.1 (105 samples)
+Reply time [ms]: response 387.9 transfer 2.1
+Reply size [B]: header 114.0 content 286.0 footer 0.0 (total 400.0)
+Reply status: 1xx=0 2xx=183644 3xx=0 4xx=0 5xx=153768
+
+CPU time [s]: user 3.49 system 49.45 (user 6.6% system 93.3% total 99.9%)
+Net I/O: 3009.6 KB/s (24.7*10^6 bps)
+
+Errors: total 13047 client-timo 4 socket-timo 0 connrefused 0 connreset 13043
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=760 --send-buffer=4096 --recv-buffer=16384 --num-conns=22800 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 22800 requests 327735 replies 312105 test-duration 45.240 s
+
+Connection rate: 504.0 conn/s (2.0 ms/conn, <=4624 concurrent connections)
+Connection time [ms]: min 9.9 avg 5727.5 max 39205.2 median 4153.5 stddev 5520.6
+Connection time [ms]: connect 4.0
+Connection length [replies/conn]: 14.538
+
+Request rate: 7244.4 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 78.0 avg 6933.2 max 10515.8 stddev 3158.7 (90 samples)
+Reply time [ms]: response 381.1 transfer 11.3
+Reply size [B]: header 92.0 content 159.0 footer 0.0 (total 251.0)
+Reply status: 1xx=0 2xx=237127 3xx=0 4xx=0 5xx=74978
+
+CPU time [s]: user 2.68 system 42.51 (user 5.9% system 94.0% total 99.9%)
+Net I/O: 2266.0 KB/s (18.6*10^6 bps)
+
+Errors: total 15630 client-timo 6 socket-timo 0 connrefused 0 connreset 15624
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=800 --send-buffer=4096 --recv-buffer=16384 --num-conns=24000 --num-calls=25
+Maximum connect burst length: 9
+
+Total: connections 24000 requests 332232 replies 315109 test-duration 55.466 s
+
+Connection rate: 432.7 conn/s (2.3 ms/conn, <=4641 concurrent connections)
+Connection time [ms]: min 13.6 avg 5887.4 max 42181.6 median 4157.5 stddev 5842.1
+Connection time [ms]: connect 7.3
+Connection length [replies/conn]: 14.026
+
+Request rate: 5989.8 req/s (0.2 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 5728.2 max 10876.7 stddev 3895.5 (110 samples)
+Reply time [ms]: response 403.6 transfer 15.0
+Reply size [B]: header 100.0 content 199.0 footer 0.0 (total 299.0)
+Reply status: 1xx=0 2xx=217876 3xx=0 4xx=0 5xx=97233
+
+CPU time [s]: user 4.45 system 50.96 (user 8.0% system 91.9% total 99.9%)
+Net I/O: 2131.3 KB/s (17.5*10^6 bps)
+
+Errors: total 17123 client-timo 0 socket-timo 0 connrefused 0 connreset 17123
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=840 --send-buffer=4096 --recv-buffer=16384 --num-conns=25200 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 25200 requests 345011 replies 326776 test-duration 45.709 s
+
+Connection rate: 551.3 conn/s (1.8 ms/conn, <=4353 concurrent connections)
+Connection time [ms]: min 12.6 avg 5485.9 max 39216.4 median 3857.5 stddev 5383.1
+Connection time [ms]: connect 6.9
+Connection length [replies/conn]: 13.764
+
+Request rate: 7548.1 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 7180.2 max 11254.5 stddev 3837.7 (91 samples)
+Reply time [ms]: response 393.9 transfer 3.6
+Reply size [B]: header 110.0 content 263.0 footer 0.0 (total 373.0)
+Reply status: 1xx=0 2xx=190402 3xx=0 4xx=0 5xx=136374
+
+CPU time [s]: user 2.84 system 42.83 (user 6.2% system 93.7% total 99.9%)
+Net I/O: 3202.8 KB/s (26.2*10^6 bps)
+
+Errors: total 18235 client-timo 0 socket-timo 0 connrefused 0 connreset 18235
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=880 --send-buffer=4096 --recv-buffer=16384 --num-conns=26400 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 26400 requests 368275 replies 349560 test-duration 52.407 s
+
+Connection rate: 503.8 conn/s (2.0 ms/conn, <=4237 concurrent connections)
+Connection time [ms]: min 14.5 avg 5485.2 max 40495.2 median 3685.5 stddev 5626.9
+Connection time [ms]: connect 5.6
+Connection length [replies/conn]: 14.153
+
+Request rate: 7027.2 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 6721.5 max 11503.0 stddev 3814.1 (104 samples)
+Reply time [ms]: response 381.2 transfer 5.4
+Reply size [B]: header 109.0 content 252.0 footer 0.0 (total 361.0)
+Reply status: 1xx=0 2xx=210447 3xx=0 4xx=0 5xx=139113
+
+CPU time [s]: user 4.10 system 48.26 (user 7.8% system 92.1% total 99.9%)
+Net I/O: 2904.3 KB/s (23.8*10^6 bps)
+
+Errors: total 18715 client-timo 1 socket-timo 0 connrefused 0 connreset 18714
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=920 --send-buffer=4096 --recv-buffer=16384 --num-conns=27600 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 27600 requests 406992 replies 388204 test-duration 49.785 s
+
+Connection rate: 554.4 conn/s (1.8 ms/conn, <=4133 concurrent connections)
+Connection time [ms]: min 17.8 avg 5292.4 max 39859.7 median 3473.5 stddev 5535.9
+Connection time [ms]: connect 3.0
+Connection length [replies/conn]: 14.843
+
+Request rate: 8175.1 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 7841.9 max 12697.7 stddev 4499.6 (99 samples)
+Reply time [ms]: response 351.4 transfer 4.5
+Reply size [B]: header 125.0 content 344.0 footer 0.0 (total 469.0)
+Reply status: 1xx=0 2xx=173118 3xx=0 4xx=0 5xx=215086
+
+CPU time [s]: user 3.72 system 46.03 (user 7.5% system 92.5% total 99.9%)
+Net I/O: 4218.7 KB/s (34.6*10^6 bps)
+
+Errors: total 18788 client-timo 3 socket-timo 0 connrefused 0 connreset 18785
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=scala-finagle.herokuapp.com --port=80 --uri=/ --rate=960 --send-buffer=4096 --recv-buffer=16384 --num-conns=28800 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 28800 requests 344942 replies 321956 test-duration 44.770 s
+
+Connection rate: 643.3 conn/s (1.6 ms/conn, <=4785 concurrent connections)
+Connection time [ms]: min 18.4 avg 4853.9 max 38264.7 median 2966.5 stddev 5295.7
+Connection time [ms]: connect 6.4
+Connection length [replies/conn]: 12.110
+
+Request rate: 7704.7 req/s (0.1 ms/req)
+Request size [B]: 80.0
+
+Reply rate [replies/s]: min 0.0 avg 7232.5 max 10786.9 stddev 3571.3 (89 samples)
+Reply time [ms]: response 391.8 transfer 6.7
+Reply size [B]: header 115.0 content 291.0 footer 0.0 (total 406.0)
+Reply status: 1xx=0 2xx=172600 3xx=0 4xx=0 5xx=149356
+
+CPU time [s]: user 3.47 system 41.27 (user 7.7% system 92.2% total 99.9%)
+Net I/O: 3460.5 KB/s (28.3*10^6 bps)
+
+Errors: total 22986 client-timo 0 socket-timo 0 connrefused 0 connreset 22986
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0

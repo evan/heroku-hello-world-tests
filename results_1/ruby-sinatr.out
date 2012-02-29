@@ -1,0 +1,529 @@
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=20 --send-buffer=4096 --recv-buffer=16384 --num-conns=600 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 600 requests 15000 replies 15000 test-duration 30.212 s
+
+Connection rate: 19.9 conn/s (50.4 ms/conn, <=14 concurrent connections)
+Connection time [ms]: min 224.5 avg 298.8 max 690.8 median 278.5 stddev 72.2
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 25.000
+
+Request rate: 496.5 req/s (2.0 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 373.5 avg 497.6 max 586.0 stddev 35.9 (60 samples)
+Reply time [ms]: response 11.9 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=15000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 12.29 system 17.86 (user 40.7% system 59.1% total 99.8%)
+Net I/O: 146.9 KB/s (1.2*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=30 --send-buffer=4096 --recv-buffer=16384 --num-conns=900 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 900 requests 22500 replies 22500 test-duration 30.206 s
+
+Connection rate: 29.8 conn/s (33.6 ms/conn, <=19 concurrent connections)
+Connection time [ms]: min 228.0 avg 289.3 max 632.0 median 276.5 stddev 52.9
+Connection time [ms]: connect 1.3
+Connection length [replies/conn]: 25.000
+
+Request rate: 744.9 req/s (1.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 512.0 avg 746.7 max 1024.1 stddev 59.5 (60 samples)
+Reply time [ms]: response 11.5 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=22500 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 11.83 system 18.33 (user 39.2% system 60.7% total 99.8%)
+Net I/O: 220.4 KB/s (1.8*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=40 --send-buffer=4096 --recv-buffer=16384 --num-conns=1200 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 1200 requests 30000 replies 30000 test-duration 30.152 s
+
+Connection rate: 39.8 conn/s (25.1 ms/conn, <=34 concurrent connections)
+Connection time [ms]: min 166.5 avg 316.0 max 906.8 median 260.5 stddev 144.2
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 25.000
+
+Request rate: 995.0 req/s (1.0 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 490.0 avg 996.2 max 1314.1 stddev 145.5 (60 samples)
+Reply time [ms]: response 12.6 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=30000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 11.29 system 18.83 (user 37.4% system 62.5% total 99.9%)
+Net I/O: 294.4 KB/s (2.4*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=50 --send-buffer=4096 --recv-buffer=16384 --num-conns=1500 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 1500 requests 37500 replies 37500 test-duration 30.247 s
+
+Connection rate: 49.6 conn/s (20.2 ms/conn, <=30 concurrent connections)
+Connection time [ms]: min 156.9 avg 277.7 max 630.5 median 261.5 stddev 70.1
+Connection time [ms]: connect 2.2
+Connection length [replies/conn]: 25.000
+
+Request rate: 1239.8 req/s (0.8 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 960.8 avg 1243.7 max 1634.1 stddev 117.1 (60 samples)
+Reply time [ms]: response 11.0 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=37500 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 11.07 system 19.12 (user 36.6% system 63.2% total 99.8%)
+Net I/O: 366.8 KB/s (3.0*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=60 --send-buffer=4096 --recv-buffer=16384 --num-conns=1800 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 1800 requests 45000 replies 45000 test-duration 30.712 s
+
+Connection rate: 58.6 conn/s (17.1 ms/conn, <=51 concurrent connections)
+Connection time [ms]: min 223.4 avg 448.4 max 5525.1 median 368.5 stddev 525.3
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 25.000
+
+Request rate: 1465.2 req/s (0.7 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 594.0 avg 1474.9 max 1722.1 stddev 197.7 (61 samples)
+Reply time [ms]: response 17.9 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=45000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 9.57 system 21.09 (user 31.2% system 68.7% total 99.8%)
+Net I/O: 433.6 KB/s (3.6*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=70 --send-buffer=4096 --recv-buffer=16384 --num-conns=2100 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 2100 requests 52500 replies 52500 test-duration 35.895 s
+
+Connection rate: 58.5 conn/s (17.1 ms/conn, <=59 concurrent connections)
+Connection time [ms]: min 198.0 avg 587.8 max 10439.8 median 457.5 stddev 794.7
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 25.000
+
+Request rate: 1462.6 req/s (0.7 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 1478.8 max 2078.1 stddev 606.7 (71 samples)
+Reply time [ms]: response 23.5 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=52500 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 10.26 system 25.59 (user 28.6% system 71.3% total 99.9%)
+Net I/O: 432.8 KB/s (3.5*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=80 --send-buffer=4096 --recv-buffer=16384 --num-conns=2400 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 2400 requests 59991 replies 59990 test-duration 37.732 s
+
+Connection rate: 63.6 conn/s (15.7 ms/conn, <=829 concurrent connections)
+Connection time [ms]: min 296.0 avg 6140.8 max 24776.3 median 4901.5 stddev 5532.6
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 24.996
+
+Request rate: 1589.9 req/s (0.6 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 1599.3 max 3517.7 stddev 906.5 (75 samples)
+Reply time [ms]: response 245.6 transfer 0.0
+Reply size [B]: header 205.0 content 80.0 footer 0.0 (total 285.0)
+Reply status: 1xx=0 2xx=53397 3xx=0 4xx=0 5xx=6593
+
+CPU time [s]: user 4.14 system 33.56 (user 11.0% system 88.9% total 99.9%)
+Net I/O: 565.1 KB/s (4.6*10^6 bps)
+
+Errors: total 1 client-timo 0 socket-timo 0 connrefused 0 connreset 1
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=90 --send-buffer=4096 --recv-buffer=16384 --num-conns=2700 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 2700 requests 67500 replies 67500 test-duration 37.525 s
+
+Connection rate: 72.0 conn/s (13.9 ms/conn, <=669 concurrent connections)
+Connection time [ms]: min 293.0 avg 4958.1 max 27259.3 median 3696.5 stddev 4105.6
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 25.000
+
+Request rate: 1798.8 req/s (0.6 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 12.0 avg 1800.0 max 2282.1 stddev 463.1 (75 samples)
+Reply time [ms]: response 198.3 transfer 0.0
+Reply size [B]: header 208.0 content 22.0 footer 0.0 (total 230.0)
+Reply status: 1xx=0 2xx=66776 3xx=0 4xx=0 5xx=724
+
+CPU time [s]: user 3.20 system 34.28 (user 8.5% system 91.3% total 99.9%)
+Net I/O: 542.7 KB/s (4.4*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=100 --send-buffer=4096 --recv-buffer=16384 --num-conns=3000 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 3000 requests 74946 replies 74943 test-duration 37.649 s
+
+Connection rate: 79.7 conn/s (12.5 ms/conn, <=747 concurrent connections)
+Connection time [ms]: min 94.1 avg 5758.4 max 29335.5 median 4723.5 stddev 4780.4
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 24.981
+
+Request rate: 1990.7 req/s (0.5 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 30.0 avg 1998.3 max 3316.4 stddev 676.8 (75 samples)
+Reply time [ms]: response 230.4 transfer 0.0
+Reply size [B]: header 204.0 content 82.0 footer 0.0 (total 286.0)
+Reply status: 1xx=0 2xx=66505 3xx=0 4xx=0 5xx=8438
+
+CPU time [s]: user 2.70 system 34.92 (user 7.2% system 92.7% total 99.9%)
+Net I/O: 710.5 KB/s (5.8*10^6 bps)
+
+Errors: total 3 client-timo 0 socket-timo 0 connrefused 0 connreset 3
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=110 --send-buffer=4096 --recv-buffer=16384 --num-conns=3300 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 3300 requests 82216 replies 82190 test-duration 39.920 s
+
+Connection rate: 82.7 conn/s (12.1 ms/conn, <=924 concurrent connections)
+Connection time [ms]: min 97.8 avg 6576.1 max 33445.9 median 5235.5 stddev 5138.8
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 24.914
+
+Request rate: 2059.5 req/s (0.5 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 96.0 avg 2073.2 max 4134.3 stddev 961.6 (79 samples)
+Reply time [ms]: response 263.8 transfer 0.0
+Reply size [B]: header 200.0 content 159.0 footer 0.0 (total 359.0)
+Reply status: 1xx=0 2xx=62279 3xx=0 4xx=0 5xx=19911
+
+CPU time [s]: user 2.49 system 37.38 (user 6.2% system 93.6% total 99.9%)
+Net I/O: 879.6 KB/s (7.2*10^6 bps)
+
+Errors: total 26 client-timo 0 socket-timo 0 connrefused 0 connreset 26
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=120 --send-buffer=4096 --recv-buffer=16384 --num-conns=3600 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 3600 requests 89589 replies 89556 test-duration 37.583 s
+
+Connection rate: 95.8 conn/s (10.4 ms/conn, <=868 concurrent connections)
+Connection time [ms]: min 28.1 avg 6288.3 max 30464.4 median 5656.5 stddev 4325.8
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 24.884
+
+Request rate: 2383.7 req/s (0.4 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 2388.3 max 4141.6 stddev 1018.5 (75 samples)
+Reply time [ms]: response 252.6 transfer 0.0
+Reply size [B]: header 198.0 content 196.0 footer 0.0 (total 394.0)
+Reply status: 1xx=0 2xx=62197 3xx=0 4xx=0 5xx=27359
+
+CPU time [s]: user 2.57 system 34.96 (user 6.8% system 93.0% total 99.9%)
+Net I/O: 1099.7 KB/s (9.0*10^6 bps)
+
+Errors: total 33 client-timo 0 socket-timo 0 connrefused 0 connreset 33
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=130 --send-buffer=4096 --recv-buffer=16384 --num-conns=3900 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 3900 requests 96809 replies 96757 test-duration 40.816 s
+
+Connection rate: 95.6 conn/s (10.5 ms/conn, <=842 concurrent connections)
+Connection time [ms]: min 9.8 avg 5813.7 max 30456.1 median 4846.5 stddev 4618.4
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 24.835
+
+Request rate: 2371.8 req/s (0.4 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 2387.1 max 4429.9 stddev 1153.0 (81 samples)
+Reply time [ms]: response 234.0 transfer 0.0
+Reply size [B]: header 197.0 content 205.0 footer 0.0 (total 402.0)
+Reply status: 1xx=0 2xx=65803 3xx=0 4xx=0 5xx=30954
+
+CPU time [s]: user 2.87 system 37.90 (user 7.0% system 92.9% total 99.9%)
+Net I/O: 1112.6 KB/s (9.1*10^6 bps)
+
+Errors: total 52 client-timo 0 socket-timo 0 connrefused 0 connreset 52
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=140 --send-buffer=4096 --recv-buffer=16384 --num-conns=4200 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 4200 requests 104075 replies 103997 test-duration 37.839 s
+
+Connection rate: 111.0 conn/s (9.0 ms/conn, <=931 concurrent connections)
+Connection time [ms]: min 14.2 avg 5981.8 max 35822.8 median 4988.5 stddev 4816.3
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 24.773
+
+Request rate: 2750.4 req/s (0.4 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 2.0 avg 2770.0 max 5307.7 stddev 1275.7 (75 samples)
+Reply time [ms]: response 241.3 transfer 0.0
+Reply size [B]: header 193.0 content 266.0 footer 0.0 (total 459.0)
+Reply status: 1xx=0 2xx=59947 3xx=0 4xx=0 5xx=44050
+
+CPU time [s]: user 2.25 system 35.54 (user 5.9% system 93.9% total 99.9%)
+Net I/O: 1444.4 KB/s (11.8*10^6 bps)
+
+Errors: total 78 client-timo 0 socket-timo 0 connrefused 0 connreset 78
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=150 --send-buffer=4096 --recv-buffer=16384 --num-conns=4500 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 4500 requests 111486 replies 111406 test-duration 36.448 s
+
+Connection rate: 123.5 conn/s (8.1 ms/conn, <=924 concurrent connections)
+Connection time [ms]: min 20.9 avg 5567.8 max 25472.8 median 4626.5 stddev 4035.5
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 24.762
+
+Request rate: 3058.7 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 554.0 avg 3090.6 max 4818.7 stddev 1055.6 (72 samples)
+Reply time [ms]: response 224.8 transfer 0.0
+Reply size [B]: header 194.0 content 251.0 footer 0.0 (total 445.0)
+Reply status: 1xx=0 2xx=66974 3xx=0 4xx=0 5xx=44432
+
+CPU time [s]: user 2.07 system 34.35 (user 5.7% system 94.2% total 99.9%)
+Net I/O: 1565.3 KB/s (12.8*10^6 bps)
+
+Errors: total 80 client-timo 0 socket-timo 0 connrefused 0 connreset 80
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=160 --send-buffer=4096 --recv-buffer=16384 --num-conns=4800 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 4800 requests 119067 replies 118982 test-duration 38.159 s
+
+Connection rate: 125.8 conn/s (7.9 ms/conn, <=928 concurrent connections)
+Connection time [ms]: min 6.6 avg 5370.4 max 31000.7 median 4705.5 stddev 3984.0
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 24.803
+
+Request rate: 3120.3 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 50.0 avg 3129.9 max 5227.7 stddev 1349.7 (76 samples)
+Reply time [ms]: response 216.4 transfer 0.0
+Reply size [B]: header 193.0 content 274.0 footer 0.0 (total 467.0)
+Reply status: 1xx=0 2xx=66915 3xx=0 4xx=0 5xx=52067
+
+CPU time [s]: user 2.26 system 35.85 (user 5.9% system 93.9% total 99.9%)
+Net I/O: 1662.3 KB/s (13.6*10^6 bps)
+
+Errors: total 85 client-timo 0 socket-timo 0 connrefused 0 connreset 85
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=170 --send-buffer=4096 --recv-buffer=16384 --num-conns=5100 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 5100 requests 125823 replies 125676 test-duration 41.318 s
+
+Connection rate: 123.4 conn/s (8.1 ms/conn, <=945 concurrent connections)
+Connection time [ms]: min 9.0 avg 5489.5 max 35508.3 median 4265.5 stddev 4938.1
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 24.667
+
+Request rate: 3045.2 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 3063.3 max 5473.6 stddev 1584.8 (82 samples)
+Reply time [ms]: response 222.4 transfer 0.0
+Reply size [B]: header 186.0 content 381.0 footer 0.0 (total 567.0)
+Reply status: 1xx=0 2xx=47917 3xx=0 4xx=0 5xx=77759
+
+CPU time [s]: user 2.95 system 38.33 (user 7.1% system 92.8% total 99.9%)
+Net I/O: 1920.3 KB/s (15.7*10^6 bps)
+
+Errors: total 147 client-timo 0 socket-timo 0 connrefused 0 connreset 147
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=180 --send-buffer=4096 --recv-buffer=16384 --num-conns=5400 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 5400 requests 132907 replies 132737 test-duration 37.072 s
+
+Connection rate: 145.7 conn/s (6.9 ms/conn, <=939 concurrent connections)
+Connection time [ms]: min 5.8 avg 4999.3 max 29905.7 median 4150.5 stddev 3845.7
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 24.599
+
+Request rate: 3585.1 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 16.0 avg 3585.7 max 5307.1 stddev 1423.0 (74 samples)
+Reply time [ms]: response 203.1 transfer 0.0
+Reply size [B]: header 190.0 content 321.0 footer 0.0 (total 511.0)
+Reply status: 1xx=0 2xx=64146 3xx=0 4xx=0 5xx=68591
+
+CPU time [s]: user 2.08 system 34.96 (user 5.6% system 94.3% total 99.9%)
+Net I/O: 2062.6 KB/s (16.9*10^6 bps)
+
+Errors: total 170 client-timo 0 socket-timo 0 connrefused 0 connreset 170
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=190 --send-buffer=4096 --recv-buffer=16384 --num-conns=5700 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 5700 requests 139986 replies 139784 test-duration 39.663 s
+
+Connection rate: 143.7 conn/s (7.0 ms/conn, <=941 concurrent connections)
+Connection time [ms]: min 7.3 avg 4763.7 max 30959.9 median 3317.5 stddev 4116.4
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 24.562
+
+Request rate: 3529.4 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 2.0 avg 3535.2 max 5885.0 stddev 1722.8 (79 samples)
+Reply time [ms]: response 193.8 transfer 0.0
+Reply size [B]: header 189.0 content 329.0 footer 0.0 (total 518.0)
+Reply status: 1xx=0 2xx=65747 3xx=0 4xx=0 5xx=74037
+
+CPU time [s]: user 2.62 system 37.02 (user 6.6% system 93.3% total 99.9%)
+Net I/O: 2054.9 KB/s (16.8*10^6 bps)
+
+Errors: total 202 client-timo 0 socket-timo 0 connrefused 0 connreset 202
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=6000 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 6000 requests 147554 replies 147352 test-duration 41.495 s
+
+Connection rate: 144.6 conn/s (6.9 ms/conn, <=944 concurrent connections)
+Connection time [ms]: min 7.2 avg 4813.6 max 30776.1 median 3492.5 stddev 3717.6
+Connection time [ms]: connect 1.6
+Connection length [replies/conn]: 24.579
+
+Request rate: 3555.9 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 12.0 avg 3585.6 max 6456.9 stddev 1947.1 (82 samples)
+Reply time [ms]: response 195.7 transfer 0.0
+Reply size [B]: header 189.0 content 338.0 footer 0.0 (total 527.0)
+Reply status: 1xx=0 2xx=66925 3xx=0 4xx=0 5xx=80427
+
+CPU time [s]: user 2.37 system 39.09 (user 5.7% system 94.2% total 99.9%)
+Net I/O: 2101.6 KB/s (17.2*10^6 bps)
+
+Errors: total 202 client-timo 0 socket-timo 0 connrefused 0 connreset 202
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=210 --send-buffer=4096 --recv-buffer=16384 --num-conns=6300 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6300 requests 154052 replies 153757 test-duration 39.354 s
+
+Connection rate: 160.1 conn/s (6.2 ms/conn, <=964 concurrent connections)
+Connection time [ms]: min 8.3 avg 4642.3 max 37327.2 median 3199.5 stddev 4414.7
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 24.437
+
+Request rate: 3914.6 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 3938.8 max 6863.2 stddev 1867.9 (78 samples)
+Reply time [ms]: response 189.8 transfer 0.0
+Reply size [B]: header 186.0 content 392.0 footer 0.0 (total 578.0)
+Reply status: 1xx=0 2xx=55911 3xx=0 4xx=0 5xx=97846
+
+CPU time [s]: user 2.33 system 37.00 (user 5.9% system 94.0% total 99.9%)
+Net I/O: 2504.2 KB/s (20.5*10^6 bps)
+
+Errors: total 295 client-timo 0 socket-timo 0 connrefused 0 connreset 295
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=220 --send-buffer=4096 --recv-buffer=16384 --num-conns=6600 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6600 requests 161244 replies 160933 test-duration 36.967 s
+
+Connection rate: 178.5 conn/s (5.6 ms/conn, <=953 concurrent connections)
+Connection time [ms]: min 7.5 avg 4303.0 max 23011.1 median 2938.5 stddev 3442.0
+Connection time [ms]: connect 1.6
+Connection length [replies/conn]: 24.417
+
+Request rate: 4361.8 req/s (0.2 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 202.0 avg 4404.3 max 6532.7 stddev 1724.1 (73 samples)
+Reply time [ms]: response 176.1 transfer 0.0
+Reply size [B]: header 187.0 content 362.0 footer 0.0 (total 549.0)
+Reply status: 1xx=0 2xx=66443 3xx=0 4xx=0 5xx=94490
+
+CPU time [s]: user 2.32 system 34.62 (user 6.3% system 93.7% total 99.9%)
+Net I/O: 2674.1 KB/s (21.9*10^6 bps)
+
+Errors: total 311 client-timo 0 socket-timo 0 connrefused 0 connreset 311
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=230 --send-buffer=4096 --recv-buffer=16384 --num-conns=6900 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6900 requests 168118 replies 167762 test-duration 38.334 s
+
+Connection rate: 180.0 conn/s (5.6 ms/conn, <=954 concurrent connections)
+Connection time [ms]: min 9.0 avg 4180.2 max 32038.9 median 2548.5 stddev 3717.8
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 24.356
+
+Request rate: 4385.6 req/s (0.2 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 4415.0 max 7635.6 stddev 1950.0 (76 samples)
+Reply time [ms]: response 171.5 transfer 0.0
+Reply size [B]: header 187.0 content 372.0 footer 0.0 (total 559.0)
+Reply status: 1xx=0 2xx=66611 3xx=0 4xx=0 5xx=101151
+
+CPU time [s]: user 2.60 system 35.69 (user 6.8% system 93.1% total 99.9%)
+Net I/O: 2725.8 KB/s (22.3*10^6 bps)
+
+Errors: total 356 client-timo 0 socket-timo 0 connrefused 0 connreset 356
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=240 --send-buffer=4096 --recv-buffer=16384 --num-conns=7200 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 7200 requests 175234 replies 174821 test-duration 38.726 s
+
+Connection rate: 185.9 conn/s (5.4 ms/conn, <=972 concurrent connections)
+Connection time [ms]: min 9.1 avg 4039.0 max 32206.0 median 2687.5 stddev 3360.5
+Connection time [ms]: connect 2.5
+Connection length [replies/conn]: 24.321
+
+Request rate: 4525.0 req/s (0.2 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 4539.0 max 8609.6 stddev 2186.5 (77 samples)
+Reply time [ms]: response 165.9 transfer 0.0
+Reply size [B]: header 186.0 content 379.0 footer 0.0 (total 565.0)
+Reply status: 1xx=0 2xx=67165 3xx=0 4xx=0 5xx=107656
+
+CPU time [s]: user 2.45 system 36.23 (user 6.3% system 93.6% total 99.9%)
+Net I/O: 2843.3 KB/s (23.3*10^6 bps)
+
+Errors: total 413 client-timo 0 socket-timo 0 connrefused 0 connreset 413
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0

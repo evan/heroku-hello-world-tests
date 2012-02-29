@@ -1,0 +1,431 @@
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=140 --send-buffer=4096 --recv-buffer=16384 --num-conns=4200 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 4200 requests 105000 replies 105000 test-duration 32.537 s
+
+Connection rate: 129.1 conn/s (7.7 ms/conn, <=598 concurrent connections)
+Connection time [ms]: min 197.0 avg 1279.5 max 11271.8 median 583.5 stddev 1726.2
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 25.000
+
+Request rate: 3227.1 req/s (0.3 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 3230.9 max 6627.1 stddev 1621.3 (65 samples)
+Reply time [ms]: response 51.1 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=105000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 5.15 system 27.34 (user 15.8% system 84.0% total 99.9%)
+Net I/O: 954.9 KB/s (7.8*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=210 --send-buffer=4096 --recv-buffer=16384 --num-conns=6300 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6300 requests 157500 replies 157500 test-duration 30.382 s
+
+Connection rate: 207.4 conn/s (4.8 ms/conn, <=393 concurrent connections)
+Connection time [ms]: min 214.7 avg 1058.1 max 16033.9 median 659.5 stddev 1339.2
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 25.000
+
+Request rate: 5184.0 req/s (0.2 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 2056.2 avg 5215.0 max 6778.5 stddev 998.6 (60 samples)
+Reply time [ms]: response 42.2 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=157500 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 3.27 system 27.08 (user 10.7% system 89.1% total 99.9%)
+Net I/O: 1533.9 KB/s (12.6*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=280 --send-buffer=4096 --recv-buffer=16384 --num-conns=8400 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 8400 requests 210000 replies 210000 test-duration 30.428 s
+
+Connection rate: 276.1 conn/s (3.6 ms/conn, <=269 concurrent connections)
+Connection time [ms]: min 250.0 avg 526.4 max 3689.1 median 485.5 stddev 168.6
+Connection time [ms]: connect 2.6
+Connection length [replies/conn]: 25.000
+
+Request rate: 6901.5 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 3790.1 avg 6937.3 max 8325.2 stddev 758.8 (60 samples)
+Reply time [ms]: response 21.0 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=210000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.14 system 26.26 (user 13.6% system 86.3% total 99.9%)
+Net I/O: 2042.1 KB/s (16.7*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=350 --send-buffer=4096 --recv-buffer=16384 --num-conns=10500 --num-calls=25
+Maximum connect burst length: 15
+
+Total: connections 10500 requests 262468 replies 262466 test-duration 39.405 s
+
+Connection rate: 266.5 conn/s (3.8 ms/conn, <=2198 concurrent connections)
+Connection time [ms]: min 94.6 avg 2761.2 max 22311.0 median 1358.5 stddev 2831.0
+Connection time [ms]: connect 3.0
+Connection length [replies/conn]: 24.997
+
+Request rate: 6660.8 req/s (0.2 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 6724.2 max 9663.8 stddev 2733.6 (78 samples)
+Reply time [ms]: response 110.3 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=262466 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 3.07 system 36.28 (user 7.8% system 92.1% total 99.9%)
+Net I/O: 1970.9 KB/s (16.1*10^6 bps)
+
+Errors: total 2 client-timo 0 socket-timo 0 connrefused 0 connreset 2
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=420 --send-buffer=4096 --recv-buffer=16384 --num-conns=12600 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 12600 requests 314946 replies 314940 test-duration 38.825 s
+
+Connection rate: 324.5 conn/s (3.1 ms/conn, <=2286 concurrent connections)
+Connection time [ms]: min 243.3 avg 3597.8 max 20120.1 median 2719.5 stddev 2474.7
+Connection time [ms]: connect 2.5
+Connection length [replies/conn]: 24.995
+
+Request rate: 8111.9 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 8167.2 max 10941.8 stddev 3091.0 (77 samples)
+Reply time [ms]: response 143.8 transfer 0.0
+Reply size [B]: header 209.0 content 16.0 footer 0.0 (total 225.0)
+Reply status: 1xx=0 2xx=314940 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.73 system 36.06 (user 7.0% system 92.9% total 99.9%)
+Net I/O: 2400.3 KB/s (19.7*10^6 bps)
+
+Errors: total 6 client-timo 0 socket-timo 0 connrefused 0 connreset 6
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=490 --send-buffer=4096 --recv-buffer=16384 --num-conns=14700 --num-calls=25
+Maximum connect burst length: 15
+
+Total: connections 14700 requests 316172 replies 312009 test-duration 45.077 s
+
+Connection rate: 326.1 conn/s (3.1 ms/conn, <=5830 concurrent connections)
+Connection time [ms]: min 38.4 avg 10402.2 max 35953.0 median 10106.5 stddev 5710.4
+Connection time [ms]: connect 7.2
+Connection length [replies/conn]: 21.493
+
+Request rate: 7014.0 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 6929.1 max 10805.1 stddev 3227.9 (90 samples)
+Reply time [ms]: response 482.6 transfer 0.1
+Reply size [B]: header 208.0 content 31.0 footer 0.0 (total 239.0)
+Reply status: 1xx=0 2xx=303699 3xx=0 4xx=0 5xx=8310
+
+CPU time [s]: user 3.01 system 42.03 (user 6.7% system 93.2% total 99.9%)
+Net I/O: 2155.1 KB/s (17.7*10^6 bps)
+
+Errors: total 4163 client-timo 0 socket-timo 0 connrefused 0 connreset 4163
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=560 --send-buffer=4096 --recv-buffer=16384 --num-conns=16800 --num-calls=25
+Maximum connect burst length: 21
+
+Total: connections 16800 requests 311937 replies 304382 test-duration 43.104 s
+
+Connection rate: 389.8 conn/s (2.6 ms/conn, <=5630 concurrent connections)
+Connection time [ms]: min 44.0 avg 8471.1 max 34735.5 median 8038.5 stddev 5559.3
+Connection time [ms]: connect 8.2
+Connection length [replies/conn]: 18.666
+
+Request rate: 7236.8 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 126.0 avg 7076.1 max 9505.2 stddev 2447.1 (86 samples)
+Reply time [ms]: response 449.9 transfer 0.6
+Reply size [B]: header 207.0 content 34.0 footer 0.0 (total 241.0)
+Reply status: 1xx=0 2xx=294876 3xx=0 4xx=0 5xx=9506
+
+CPU time [s]: user 2.28 system 40.77 (user 5.3% system 94.6% total 99.9%)
+Net I/O: 2222.4 KB/s (18.2*10^6 bps)
+
+Errors: total 7555 client-timo 3 socket-timo 0 connrefused 0 connreset 7552
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=630 --send-buffer=4096 --recv-buffer=16384 --num-conns=18900 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 18900 requests 330162 replies 320169 test-duration 42.466 s
+
+Connection rate: 445.1 conn/s (2.2 ms/conn, <=6071 concurrent connections)
+Connection time [ms]: min 18.2 avg 5579.9 max 25801.1 median 4858.5 stddev 4398.3
+Connection time [ms]: connect 7.5
+Connection length [replies/conn]: 17.634
+
+Request rate: 7774.7 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 7620.8 max 20358.3 stddev 4614.7 (84 samples)
+Reply time [ms]: response 313.0 transfer 0.1
+Reply size [B]: header 194.0 content 47.0 footer 0.0 (total 241.0)
+Reply status: 1xx=0 2xx=261632 3xx=0 4xx=0 5xx=58537
+
+CPU time [s]: user 4.42 system 38.00 (user 10.4% system 89.5% total 99.9%)
+Net I/O: 2371.9 KB/s (19.4*10^6 bps)
+
+Errors: total 9993 client-timo 0 socket-timo 0 connrefused 0 connreset 9993
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=700 --send-buffer=4096 --recv-buffer=16384 --num-conns=21000 --num-calls=25
+Maximum connect burst length: 9
+
+Total: connections 21000 requests 399168 replies 390182 test-duration 55.794 s
+
+Connection rate: 376.4 conn/s (2.7 ms/conn, <=8787 concurrent connections)
+Connection time [ms]: min 61.2 avg 10502.3 max 39153.9 median 10565.5 stddev 6452.2
+Connection time [ms]: connect 8.5
+Connection length [replies/conn]: 19.107
+
+Request rate: 7154.4 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 7026.7 max 26031.5 stddev 4511.1 (111 samples)
+Reply time [ms]: response 544.5 transfer 0.3
+Reply size [B]: header 201.0 content 29.0 footer 0.0 (total 230.0)
+Reply status: 1xx=0 2xx=353878 3xx=0 4xx=0 5xx=36304
+
+CPU time [s]: user 5.22 system 50.50 (user 9.4% system 90.5% total 99.9%)
+Net I/O: 2124.0 KB/s (17.4*10^6 bps)
+
+Errors: total 8986 client-timo 1 socket-timo 0 connrefused 0 connreset 8985
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 770
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=840 --send-buffer=4096 --recv-buffer=16384 --num-conns=25200 --num-calls=25
+Maximum connect burst length: 9
+
+Total: connections 25200 requests 401733 replies 386409 test-duration 44.421 s
+
+Connection rate: 567.3 conn/s (1.8 ms/conn, <=8509 concurrent connections)
+Connection time [ms]: min 29.3 avg 8647.7 max 35124.1 median 8098.5 stddev 5966.6
+Connection time [ms]: connect 7.9
+Connection length [replies/conn]: 16.110
+
+Request rate: 9043.8 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 8772.6 max 26893.7 stddev 3995.1 (88 samples)
+Reply time [ms]: response 528.4 transfer 0.1
+Reply size [B]: header 197.0 content 41.0 footer 0.0 (total 238.0)
+Reply status: 1xx=0 2xx=328994 3xx=0 4xx=0 5xx=57415
+
+CPU time [s]: user 2.70 system 41.67 (user 6.1% system 93.8% total 99.9%)
+Net I/O: 2713.4 KB/s (22.2*10^6 bps)
+
+Errors: total 15324 client-timo 1 socket-timo 0 connrefused 0 connreset 15323
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=910 --send-buffer=4096 --recv-buffer=16384 --num-conns=27300 --num-calls=25
+Maximum connect burst length: 10
+
+Total: connections 27300 requests 386304 replies 368765 test-duration 58.135 s
+
+Connection rate: 469.6 conn/s (2.1 ms/conn, <=10235 concurrent connections)
+Connection time [ms]: min 18.2 avg 13373.5 max 54075.5 median 11768.5 stddev 9760.0
+Connection time [ms]: connect 9.1
+Connection length [replies/conn]: 14.467
+
+Request rate: 6645.0 req/s (0.2 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 6349.0 max 9963.6 stddev 2627.1 (116 samples)
+Reply time [ms]: response 921.1 transfer 0.4
+Reply size [B]: header 203.0 content 100.0 footer 0.0 (total 303.0)
+Reply status: 1xx=0 2xx=316259 3xx=0 4xx=0 5xx=52506
+
+CPU time [s]: user 2.96 system 55.12 (user 5.1% system 94.8% total 99.9%)
+Net I/O: 2389.5 KB/s (19.6*10^6 bps)
+
+Errors: total 17539 client-timo 0 socket-timo 0 connrefused 0 connreset 17539
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=980 --send-buffer=4096 --recv-buffer=16384 --num-conns=29400 --num-calls=25
+Maximum connect burst length: 11
+
+Total: connections 29400 requests 427378 replies 407625 test-duration 55.535 s
+
+Connection rate: 529.4 conn/s (1.9 ms/conn, <=8079 concurrent connections)
+Connection time [ms]: min 22.4 avg 8683.0 max 45264.1 median 7800.5 stddev 6346.9
+Connection time [ms]: connect 5.6
+Connection length [replies/conn]: 14.696
+
+Request rate: 7695.6 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 7338.2 max 10835.7 stddev 4296.4 (111 samples)
+Reply time [ms]: response 587.5 transfer 2.1
+Reply size [B]: header 202.0 content 124.0 footer 0.0 (total 326.0)
+Reply status: 1xx=0 2xx=332577 3xx=0 4xx=0 5xx=75048
+
+CPU time [s]: user 5.27 system 50.21 (user 9.5% system 90.4% total 99.9%)
+Net I/O: 2931.4 KB/s (24.0*10^6 bps)
+
+Errors: total 19753 client-timo 3 socket-timo 0 connrefused 0 connreset 19750
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=1050 --send-buffer=4096 --recv-buffer=16384 --num-conns=31500 --num-calls=25
+Maximum connect burst length: 27
+
+Total: connections 31500 requests 451911 replies 431299 test-duration 48.553 s
+
+Connection rate: 648.8 conn/s (1.5 ms/conn, <=9132 concurrent connections)
+Connection time [ms]: min 24.3 avg 8365.4 max 40532.7 median 7195.5 stddev 6272.8
+Connection time [ms]: connect 43.2
+Connection length [replies/conn]: 14.799
+
+Request rate: 9307.6 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 150.0 avg 8883.9 max 24136.6 stddev 5056.5 (97 samples)
+Reply time [ms]: response 552.9 transfer 0.3
+Reply size [B]: header 187.0 content 56.0 footer 0.0 (total 243.0)
+Reply status: 1xx=0 2xx=316420 3xx=0 4xx=0 5xx=114879
+
+CPU time [s]: user 2.93 system 45.56 (user 6.0% system 93.8% total 99.9%)
+Net I/O: 2823.3 KB/s (23.1*10^6 bps)
+
+Errors: total 20612 client-timo 0 socket-timo 0 connrefused 0 connreset 20612
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=1120 --send-buffer=4096 --recv-buffer=16384 --num-conns=33600 --num-calls=25
+Maximum connect burst length: 13
+
+Total: connections 33600 requests 421407 replies 396604 test-duration 55.321 s
+
+Connection rate: 607.4 conn/s (1.6 ms/conn, <=9404 concurrent connections)
+Connection time [ms]: min 15.0 avg 8371.2 max 46661.9 median 7060.5 stddev 6648.3
+Connection time [ms]: connect 24.6
+Connection length [replies/conn]: 12.896
+
+Request rate: 7617.4 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 7205.3 max 21945.3 stddev 5411.3 (110 samples)
+Reply time [ms]: response 640.6 transfer 0.8
+Reply size [B]: header 183.0 content 109.0 footer 0.0 (total 292.0)
+Reply status: 1xx=0 2xx=253763 3xx=0 4xx=0 5xx=142841
+
+CPU time [s]: user 4.87 system 50.39 (user 8.8% system 91.1% total 99.9%)
+Net I/O: 2634.5 KB/s (21.6*10^6 bps)
+
+Errors: total 24803 client-timo 1 socket-timo 0 connrefused 0 connreset 24802
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 1190
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1260
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=1330 --send-buffer=4096 --recv-buffer=16384 --num-conns=39900 --num-calls=25
+Maximum connect burst length: 12
+
+Total: connections 39900 requests 462329 replies 431736 test-duration 49.504 s
+
+Connection rate: 806.0 conn/s (1.2 ms/conn, <=8229 concurrent connections)
+Connection time [ms]: min 19.1 avg 7695.6 max 43464.8 median 5396.5 stddev 6885.3
+Connection time [ms]: connect 5.2
+Connection length [replies/conn]: 11.999
+
+Request rate: 9339.3 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 8802.1 max 10993.0 stddev 2760.8 (98 samples)
+Reply time [ms]: response 639.7 transfer 0.4
+Reply size [B]: header 200.0 content 163.0 footer 0.0 (total 363.0)
+Reply status: 1xx=0 2xx=324335 3xx=0 4xx=0 5xx=107401
+
+CPU time [s]: user 3.46 system 46.00 (user 7.0% system 92.9% total 99.9%)
+Net I/O: 3803.6 KB/s (31.2*10^6 bps)
+
+Errors: total 30593 client-timo 0 socket-timo 0 connrefused 0 connreset 30593
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 1400
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=ruby-sinatr.herokuapp.com --port=80 --uri=/ --rate=1470 --send-buffer=4096 --recv-buffer=16384 --num-conns=44100 --num-calls=25
+Maximum connect burst length: 11
+
+Total: connections 44100 requests 453721 replies 417522 test-duration 49.420 s
+
+Connection rate: 892.3 conn/s (1.1 ms/conn, <=8210 concurrent connections)
+Connection time [ms]: min 15.7 avg 6473.6 max 42318.1 median 4379.5 stddev 6093.7
+Connection time [ms]: connect 4.8
+Connection length [replies/conn]: 10.578
+
+Request rate: 9180.9 req/s (0.1 ms/req)
+Request size [B]: 78.0
+
+Reply rate [replies/s]: min 0.0 avg 8512.9 max 11450.1 stddev 3197.6 (98 samples)
+Reply time [ms]: response 608.9 transfer 0.2
+Reply size [B]: header 201.0 content 146.0 footer 0.0 (total 347.0)
+Reply status: 1xx=0 2xx=325035 3xx=0 4xx=0 5xx=92487
+
+CPU time [s]: user 3.92 system 45.46 (user 7.9% system 92.0% total 99.9%)
+Net I/O: 3570.0 KB/s (29.2*10^6 bps)
+
+Errors: total 36199 client-timo 0 socket-timo 0 connrefused 0 connreset 36199
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 1540
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1610
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1680
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.

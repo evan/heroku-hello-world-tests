@@ -1,0 +1,501 @@
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=80 --send-buffer=4096 --recv-buffer=16384 --num-conns=2400 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 2400 requests 60000 replies 60000 test-duration 30.231 s
+
+Connection rate: 79.4 conn/s (12.6 ms/conn, <=725 concurrent connections)
+Connection time [ms]: min 171.1 avg 2426.4 max 13224.3 median 464.5 stddev 3653.0
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 25.000
+
+Request rate: 1984.7 req/s (0.5 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 52.0 avg 1989.8 max 7430.4 stddev 1556.3 (60 samples)
+Reply time [ms]: response 96.9 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=60000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 5.34 system 24.85 (user 17.7% system 82.2% total 99.9%)
+Net I/O: 459.6 KB/s (3.8*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=120 --send-buffer=4096 --recv-buffer=16384 --num-conns=3600 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 3600 requests 89882 replies 89872 test-duration 30.248 s
+
+Connection rate: 119.0 conn/s (8.4 ms/conn, <=50 concurrent connections)
+Connection time [ms]: min 68.0 avg 275.7 max 579.3 median 267.5 stddev 54.2
+Connection time [ms]: connect 2.2
+Connection length [replies/conn]: 24.964
+
+Request rate: 2971.5 req/s (0.3 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 2087.5 avg 2979.9 max 3624.3 stddev 241.4 (60 samples)
+Reply time [ms]: response 10.9 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=89872 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 8.57 system 21.65 (user 28.3% system 71.6% total 99.9%)
+Net I/O: 688.2 KB/s (5.6*10^6 bps)
+
+Errors: total 10 client-timo 0 socket-timo 0 connrefused 0 connreset 10
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=160 --send-buffer=4096 --recv-buffer=16384 --num-conns=4800 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 4800 requests 119980 replies 119977 test-duration 30.250 s
+
+Connection rate: 158.7 conn/s (6.3 ms/conn, <=64 concurrent connections)
+Connection time [ms]: min 133.9 avg 233.6 max 1726.2 median 223.5 stddev 59.8
+Connection time [ms]: connect 1.4
+Connection length [replies/conn]: 24.995
+
+Request rate: 3966.2 req/s (0.3 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 3090.2 avg 3985.3 max 4980.3 stddev 290.0 (60 samples)
+Reply time [ms]: response 9.3 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=119977 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 8.28 system 21.95 (user 27.4% system 72.5% total 99.9%)
+Net I/O: 918.6 KB/s (7.5*10^6 bps)
+
+Errors: total 3 client-timo 0 socket-timo 0 connrefused 0 connreset 3
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=6000 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 6000 requests 149998 replies 149997 test-duration 30.407 s
+
+Connection rate: 197.3 conn/s (5.1 ms/conn, <=245 concurrent connections)
+Connection time [ms]: min 181.2 avg 522.1 max 7062.4 median 383.5 stddev 631.3
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 25.000
+
+Request rate: 4933.0 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 3245.7 avg 4974.1 max 7958.9 stddev 881.3 (60 samples)
+Reply time [ms]: response 20.8 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=149997 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 5.44 system 24.93 (user 17.9% system 82.0% total 99.9%)
+Net I/O: 1142.4 KB/s (9.4*10^6 bps)
+
+Errors: total 1 client-timo 0 socket-timo 0 connrefused 0 connreset 1
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=240 --send-buffer=4096 --recv-buffer=16384 --num-conns=7200 --num-calls=25
+Maximum connect burst length: 8
+
+Total: connections 7200 requests 179971 replies 179969 test-duration 30.305 s
+
+Connection rate: 237.6 conn/s (4.2 ms/conn, <=120 concurrent connections)
+Connection time [ms]: min 106.8 avg 332.4 max 710.2 median 322.5 stddev 65.8
+Connection time [ms]: connect 2.4
+Connection length [replies/conn]: 24.996
+
+Request rate: 5938.7 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 4018.3 avg 5964.7 max 7138.6 stddev 503.9 (60 samples)
+Reply time [ms]: response 13.2 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=179969 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 5.85 system 24.42 (user 19.3% system 80.6% total 99.9%)
+Net I/O: 1375.3 KB/s (11.3*10^6 bps)
+
+Errors: total 2 client-timo 0 socket-timo 0 connrefused 0 connreset 2
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=280 --send-buffer=4096 --recv-buffer=16384 --num-conns=8400 --num-calls=25
+Maximum connect burst length: 8
+
+Total: connections 8400 requests 209882 replies 209874 test-duration 38.934 s
+
+Connection rate: 215.7 conn/s (4.6 ms/conn, <=965 concurrent connections)
+Connection time [ms]: min 32.3 avg 1202.9 max 13700.6 median 538.5 stddev 2023.1
+Connection time [ms]: connect 1.6
+Connection length [replies/conn]: 24.988
+
+Request rate: 5390.7 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 5444.5 max 8528.7 stddev 2464.3 (77 samples)
+Reply time [ms]: response 48.1 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=209874 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.33 system 34.56 (user 11.1% system 88.8% total 99.9%)
+Net I/O: 1248.3 KB/s (10.2*10^6 bps)
+
+Errors: total 8 client-timo 0 socket-timo 0 connrefused 0 connreset 8
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=320 --send-buffer=4096 --recv-buffer=16384 --num-conns=9600 --num-calls=25
+Maximum connect burst length: 12
+
+Total: connections 9600 requests 239689 replies 239665 test-duration 39.182 s
+
+Connection rate: 245.0 conn/s (4.1 ms/conn, <=2313 concurrent connections)
+Connection time [ms]: min 235.3 avg 5193.8 max 28053.0 median 4403.5 stddev 4232.5
+Connection time [ms]: connect 2.3
+Connection length [replies/conn]: 24.965
+
+Request rate: 6117.3 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6144.3 max 10001.7 stddev 2553.4 (78 samples)
+Reply time [ms]: response 207.9 transfer 0.0
+Reply size [B]: header 127.0 content 34.0 footer 0.0 (total 161.0)
+Reply status: 1xx=0 2xx=235952 3xx=0 4xx=0 5xx=3713
+
+CPU time [s]: user 2.49 system 36.64 (user 6.4% system 93.5% total 99.9%)
+Net I/O: 1474.4 KB/s (12.1*10^6 bps)
+
+Errors: total 24 client-timo 0 socket-timo 0 connrefused 0 connreset 24
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=360 --send-buffer=4096 --recv-buffer=16384 --num-conns=10800 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 10800 requests 269132 replies 269071 test-duration 36.633 s
+
+Connection rate: 294.8 conn/s (3.4 ms/conn, <=1185 concurrent connections)
+Connection time [ms]: min 14.7 avg 1298.1 max 13906.3 median 706.5 stddev 1508.3
+Connection time [ms]: connect 1.9
+Connection length [replies/conn]: 24.921
+
+Request rate: 7346.7 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 7370.8 max 10638.4 stddev 2756.1 (73 samples)
+Reply time [ms]: response 52.0 transfer 0.0
+Reply size [B]: header 127.0 content 25.0 footer 0.0 (total 152.0)
+Reply status: 1xx=0 2xx=269071 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 3.47 system 33.12 (user 9.5% system 90.4% total 99.9%)
+Net I/O: 1700.7 KB/s (13.9*10^6 bps)
+
+Errors: total 61 client-timo 0 socket-timo 0 connrefused 0 connreset 61
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=12000 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 12000 requests 291339 replies 290640 test-duration 40.252 s
+
+Connection rate: 298.1 conn/s (3.4 ms/conn, <=2865 concurrent connections)
+Connection time [ms]: min 50.2 avg 4973.0 max 25954.4 median 4246.5 stddev 3863.9
+Connection time [ms]: connect 2.9
+Connection length [replies/conn]: 24.279
+
+Request rate: 7237.8 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 7256.3 max 10164.6 stddev 2676.5 (80 samples)
+Reply time [ms]: response 204.6 transfer 0.0
+Reply size [B]: header 128.0 content 40.0 footer 0.0 (total 168.0)
+Reply status: 1xx=0 2xx=282964 3xx=0 4xx=0 5xx=7676
+
+CPU time [s]: user 2.58 system 37.64 (user 6.4% system 93.5% total 99.9%)
+Net I/O: 1790.1 KB/s (14.7*10^6 bps)
+
+Errors: total 699 client-timo 0 socket-timo 0 connrefused 0 connreset 699
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=440 --send-buffer=4096 --recv-buffer=16384 --num-conns=13200 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 13200 requests 328988 replies 328911 test-duration 39.180 s
+
+Connection rate: 336.9 conn/s (3.0 ms/conn, <=3142 concurrent connections)
+Connection time [ms]: min 9.4 avg 3905.3 max 24382.5 median 3036.5 stddev 3464.4
+Connection time [ms]: connect 2.2
+Connection length [replies/conn]: 24.925
+
+Request rate: 8396.9 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 8433.5 max 11406.8 stddev 2976.2 (78 samples)
+Reply time [ms]: response 156.6 transfer 0.0
+Reply size [B]: header 128.0 content 46.0 footer 0.0 (total 174.0)
+Reply status: 1xx=0 2xx=316708 3xx=0 4xx=0 5xx=12203
+
+CPU time [s]: user 2.70 system 36.43 (user 6.9% system 93.0% total 99.9%)
+Net I/O: 2134.9 KB/s (17.5*10^6 bps)
+
+Errors: total 77 client-timo 0 socket-timo 0 connrefused 0 connreset 77
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=480 --send-buffer=4096 --recv-buffer=16384 --num-conns=14400 --num-calls=25
+Maximum connect burst length: 2
+
+Total: connections 14400 requests 338200 replies 336487 test-duration 39.472 s
+
+Connection rate: 364.8 conn/s (2.7 ms/conn, <=3942 concurrent connections)
+Connection time [ms]: min 11.7 avg 7811.8 max 36031.9 median 7000.5 stddev 4797.6
+Connection time [ms]: connect 2.6
+Connection length [replies/conn]: 23.486
+
+Request rate: 8568.1 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 42.0 avg 8611.8 max 12263.6 stddev 3675.1 (78 samples)
+Reply time [ms]: response 332.4 transfer 0.1
+Reply size [B]: header 147.0 content 284.0 footer 0.0 (total 431.0)
+Reply status: 1xx=0 2xx=186264 3xx=0 4xx=0 5xx=150223
+
+CPU time [s]: user 2.14 system 37.30 (user 5.4% system 94.5% total 99.9%)
+Net I/O: 4310.9 KB/s (35.3*10^6 bps)
+
+Errors: total 1713 client-timo 0 socket-timo 0 connrefused 0 connreset 1713
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 520
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=560 --send-buffer=4096 --recv-buffer=16384 --num-conns=16800 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 16800 requests 340962 replies 335163 test-duration 44.617 s
+
+Connection rate: 376.5 conn/s (2.7 ms/conn, <=5211 concurrent connections)
+Connection time [ms]: min 10.5 avg 8531.3 max 34637.7 median 8158.5 stddev 5321.5
+Connection time [ms]: connect 4.3
+Connection length [replies/conn]: 20.380
+
+Request rate: 7642.0 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 7528.9 max 10356.5 stddev 3169.8 (89 samples)
+Reply time [ms]: response 418.0 transfer 0.3
+Reply size [B]: header 140.0 content 197.0 footer 0.0 (total 337.0)
+Reply status: 1xx=0 2xx=236083 3xx=0 4xx=0 5xx=99080
+
+CPU time [s]: user 3.34 system 41.24 (user 7.5% system 92.4% total 99.9%)
+Net I/O: 3111.6 KB/s (25.5*10^6 bps)
+
+Errors: total 5799 client-timo 0 socket-timo 0 connrefused 0 connreset 5799
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=600 --send-buffer=4096 --recv-buffer=16384 --num-conns=18000 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 18000 requests 365132 replies 358807 test-duration 41.967 s
+
+Connection rate: 428.9 conn/s (2.3 ms/conn, <=4140 concurrent connections)
+Connection time [ms]: min 9.9 avg 6646.4 max 32881.4 median 6122.5 stddev 4565.6
+Connection time [ms]: connect 2.9
+Connection length [replies/conn]: 20.335
+
+Request rate: 8700.5 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 8642.6 max 12206.6 stddev 3294.5 (83 samples)
+Reply time [ms]: response 326.4 transfer 0.2
+Reply size [B]: header 141.0 content 207.0 footer 0.0 (total 348.0)
+Reply status: 1xx=0 2xx=246193 3xx=0 4xx=0 5xx=112614
+
+CPU time [s]: user 2.57 system 39.35 (user 6.1% system 93.8% total 99.9%)
+Net I/O: 3637.4 KB/s (29.8*10^6 bps)
+
+Errors: total 6325 client-timo 0 socket-timo 0 connrefused 0 connreset 6325
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=640 --send-buffer=4096 --recv-buffer=16384 --num-conns=19200 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 19200 requests 326327 replies 315808 test-duration 49.838 s
+
+Connection rate: 385.3 conn/s (2.6 ms/conn, <=5180 concurrent connections)
+Connection time [ms]: min 9.8 avg 7425.5 max 36449.8 median 6841.5 stddev 5450.0
+Connection time [ms]: connect 4.3
+Connection length [replies/conn]: 17.084
+
+Request rate: 6547.8 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6378.3 max 10413.9 stddev 3386.5 (99 samples)
+Reply time [ms]: response 433.0 transfer 0.2
+Reply size [B]: header 137.0 content 152.0 footer 0.0 (total 289.0)
+Reply status: 1xx=0 2xx=246613 3xx=0 4xx=0 5xx=69195
+
+CPU time [s]: user 2.71 system 47.09 (user 5.4% system 94.5% total 99.9%)
+Net I/O: 2336.0 KB/s (19.1*10^6 bps)
+
+Errors: total 10519 client-timo 0 socket-timo 0 connrefused 0 connreset 10519
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=680 --send-buffer=4096 --recv-buffer=16384 --num-conns=20400 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 20400 requests 337602 replies 325934 test-duration 43.142 s
+
+Connection rate: 472.9 conn/s (2.1 ms/conn, <=4578 concurrent connections)
+Connection time [ms]: min 16.1 avg 6796.4 max 37931.2 median 5548.5 stddev 5643.6
+Connection time [ms]: connect 5.6
+Connection length [replies/conn]: 16.741
+
+Request rate: 7825.4 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 7577.8 max 10835.0 stddev 2905.8 (86 samples)
+Reply time [ms]: response 404.7 transfer 0.2
+Reply size [B]: header 142.0 content 219.0 footer 0.0 (total 361.0)
+Reply status: 1xx=0 2xx=217230 3xx=0 4xx=0 5xx=108704
+
+CPU time [s]: user 2.92 system 40.18 (user 6.8% system 93.1% total 99.9%)
+Net I/O: 3316.6 KB/s (27.2*10^6 bps)
+
+Errors: total 11668 client-timo 0 socket-timo 0 connrefused 0 connreset 11668
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=720 --send-buffer=4096 --recv-buffer=16384 --num-conns=21600 --num-calls=25
+Maximum connect burst length: 3
+
+Total: connections 21600 requests 323595 replies 309290 test-duration 47.994 s
+
+Connection rate: 450.1 conn/s (2.2 ms/conn, <=4397 concurrent connections)
+Connection time [ms]: min 11.6 avg 6646.5 max 42601.0 median 5118.5 stddev 6184.8
+Connection time [ms]: connect 5.7
+Connection length [replies/conn]: 15.188
+
+Request rate: 6742.5 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6493.2 max 9495.7 stddev 3088.9 (95 samples)
+Reply time [ms]: response 435.7 transfer 0.6
+Reply size [B]: header 143.0 content 236.0 footer 0.0 (total 379.0)
+Reply status: 1xx=0 2xx=196700 3xx=0 4xx=0 5xx=112590
+
+CPU time [s]: user 2.24 system 45.71 (user 4.7% system 95.2% total 99.9%)
+Net I/O: 2955.3 KB/s (24.2*10^6 bps)
+
+Errors: total 14305 client-timo 5 socket-timo 0 connrefused 0 connreset 14300
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=760 --send-buffer=4096 --recv-buffer=16384 --num-conns=22800 --num-calls=25
+Maximum connect burst length: 6
+
+Total: connections 22800 requests 375792 replies 362259 test-duration 41.716 s
+
+Connection rate: 546.6 conn/s (1.8 ms/conn, <=4136 concurrent connections)
+Connection time [ms]: min 19.6 avg 5632.6 max 34536.7 median 4476.5 stddev 4956.2
+Connection time [ms]: connect 3.0
+Connection length [replies/conn]: 16.499
+
+Request rate: 9008.3 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 8727.3 max 12076.1 stddev 3769.7 (83 samples)
+Reply time [ms]: response 340.7 transfer 0.3
+Reply size [B]: header 148.0 content 294.0 footer 0.0 (total 442.0)
+Reply status: 1xx=0 2xx=194213 3xx=0 4xx=0 5xx=168046
+
+CPU time [s]: user 3.02 system 38.64 (user 7.2% system 92.6% total 99.9%)
+Net I/O: 4507.5 KB/s (36.9*10^6 bps)
+
+Errors: total 13533 client-timo 0 socket-timo 0 connrefused 0 connreset 13533
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=800 --send-buffer=4096 --recv-buffer=16384 --num-conns=24000 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 24000 requests 329440 replies 312221 test-duration 47.654 s
+
+Connection rate: 503.6 conn/s (2.0 ms/conn, <=4519 concurrent connections)
+Connection time [ms]: min 15.2 avg 5897.3 max 44588.7 median 5016.5 stddev 4773.2
+Connection time [ms]: connect 5.1
+Connection length [replies/conn]: 13.901
+
+Request rate: 6913.1 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6571.7 max 10075.9 stddev 3357.1 (95 samples)
+Reply time [ms]: response 421.6 transfer 0.4
+Reply size [B]: header 136.0 content 146.0 footer 0.0 (total 282.0)
+Reply status: 1xx=0 2xx=247122 3xx=0 4xx=0 5xx=65099
+
+CPU time [s]: user 4.15 system 43.45 (user 8.7% system 91.2% total 99.9%)
+Net I/O: 2384.4 KB/s (19.5*10^6 bps)
+
+Errors: total 17219 client-timo 1 socket-timo 0 connrefused 0 connreset 17218
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=840 --send-buffer=4096 --recv-buffer=16384 --num-conns=25200 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 25200 requests 357446 replies 340076 test-duration 51.230 s
+
+Connection rate: 491.9 conn/s (2.0 ms/conn, <=4450 concurrent connections)
+Connection time [ms]: min 14.4 avg 6042.8 max 44541.3 median 4512.5 stddev 5658.4
+Connection time [ms]: connect 4.9
+Connection length [replies/conn]: 14.444
+
+Request rate: 6977.3 req/s (0.1 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6666.5 max 10241.0 stddev 3662.8 (102 samples)
+Reply time [ms]: response 416.6 transfer 0.4
+Reply size [B]: header 142.0 content 226.0 footer 0.0 (total 368.0)
+Reply status: 1xx=0 2xx=222419 3xx=0 4xx=0 5xx=117657
+
+CPU time [s]: user 2.95 system 48.23 (user 5.8% system 94.2% total 99.9%)
+Net I/O: 2973.3 KB/s (24.4*10^6 bps)
+
+Errors: total 17370 client-timo 7 socket-timo 0 connrefused 0 connreset 17363
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 880
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=920 --send-buffer=4096 --recv-buffer=16384 --num-conns=27600 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 27600 requests 348534 replies 327414 test-duration 54.079 s
+
+Connection rate: 510.4 conn/s (2.0 ms/conn, <=5873 concurrent connections)
+Connection time [ms]: min 20.9 avg 5753.4 max 45645.5 median 1379.5 stddev 7589.7
+Connection time [ms]: connect 9.3
+Connection length [replies/conn]: 12.819
+
+Request rate: 6444.9 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 6061.2 max 11587.7 stddev 4118.3 (108 samples)
+Reply time [ms]: response 443.4 transfer 0.3
+Reply size [B]: header 150.0 content 327.0 footer 0.0 (total 477.0)
+Reply status: 1xx=0 2xx=157067 3xx=0 4xx=0 5xx=170347
+
+CPU time [s]: user 4.48 system 49.56 (user 8.3% system 91.6% total 99.9%)
+Net I/O: 3365.7 KB/s (27.6*10^6 bps)
+
+Errors: total 21120 client-timo 13 socket-timo 0 connrefused 0 connreset 21107
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=java-tomcat.herokuapp.com --port=80 --uri=/servlet --rate=960 --send-buffer=4096 --recv-buffer=16384 --num-conns=28800 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 28800 requests 346533 replies 323797 test-duration 56.717 s
+
+Connection rate: 507.8 conn/s (2.0 ms/conn, <=5083 concurrent connections)
+Connection time [ms]: min 11.6 avg 4237.7 max 33192.8 median 2772.5 stddev 4309.9
+Connection time [ms]: connect 7.4
+Connection length [replies/conn]: 12.306
+
+Request rate: 6109.9 req/s (0.2 ms/req)
+Request size [B]: 85.0
+
+Reply rate [replies/s]: min 0.0 avg 5730.6 max 10352.0 stddev 4174.9 (113 samples)
+Reply time [ms]: response 341.2 transfer 0.4
+Reply size [B]: header 139.0 content 186.0 footer 0.0 (total 325.0)
+Reply status: 1xx=0 2xx=234003 3xx=0 4xx=0 5xx=89794
+
+CPU time [s]: user 6.53 system 50.15 (user 11.5% system 88.4% total 99.9%)
+Net I/O: 2325.7 KB/s (19.1*10^6 bps)
+
+Errors: total 22736 client-timo 0 socket-timo 0 connrefused 0 connreset 22736
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
