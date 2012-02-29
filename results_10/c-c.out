@@ -1,0 +1,291 @@
+httperf --hog --timeout=30 --client=0/1 --server=c-c.herokuapp.com --port=80 --uri=/ --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=6000 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 6000 requests 149939 replies 149933 test-duration 56.499 s
+
+Connection rate: 106.2 conn/s (9.4 ms/conn, <=1130 concurrent connections)
+Connection time [ms]: min 15.3 avg 4652.2 max 34613.1 median 3277.5 stddev 5305.9
+Connection time [ms]: connect 1.5
+Connection length [replies/conn]: 24.989
+
+Request rate: 2653.8 req/s (0.4 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 0.0 avg 2653.8 max 6615.3 stddev 2144.9 (113 samples)
+Reply time [ms]: response 184.7 transfer 1.4
+Reply size [B]: header 109.0 content 15.0 footer 1.0 (total 125.0)
+Reply status: 1xx=0 2xx=149932 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 6.23 system 50.22 (user 11.0% system 88.9% total 99.9%)
+Net I/O: 506.3 KB/s (4.1*10^6 bps)
+
+Errors: total 6 client-timo 0 socket-timo 0 connrefused 0 connreset 6
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=c-c.herokuapp.com --port=80 --uri=/ --rate=300 --send-buffer=4096 --recv-buffer=16384 --num-conns=9000 --num-calls=25
+Maximum connect burst length: 1
+
+Total: connections 9000 requests 224839 replies 224822 test-duration 60.463 s
+
+Connection rate: 148.9 conn/s (6.7 ms/conn, <=3529 concurrent connections)
+Connection time [ms]: min 187.0 avg 10401.3 max 42076.0 median 9863.5 stddev 7176.1
+Connection time [ms]: connect 2.0
+Connection length [replies/conn]: 24.980
+
+Request rate: 3718.6 req/s (0.3 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 0.0 avg 3747.3 max 8802.5 stddev 2783.2 (120 samples)
+Reply time [ms]: response 382.5 transfer 33.7
+Reply size [B]: header 109.0 content 12.0 footer 1.0 (total 122.0)
+Reply status: 1xx=0 2xx=224821 3xx=0 4xx=0 5xx=1
+
+CPU time [s]: user 4.88 system 55.53 (user 8.1% system 91.8% total 99.9%)
+Net I/O: 698.7 KB/s (5.7*10^6 bps)
+
+Errors: total 17 client-timo 0 socket-timo 0 connrefused 0 connreset 17
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=c-c.herokuapp.com --port=80 --uri=/ --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=12000 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 12000 requests 299556 replies 299518 test-duration 58.168 s
+
+Connection rate: 206.3 conn/s (4.8 ms/conn, <=4210 concurrent connections)
+Connection time [ms]: min 44.1 avg 8220.1 max 43236.0 median 6350.5 stddev 6488.8
+Connection time [ms]: connect 2.2
+Connection length [replies/conn]: 24.966
+
+Request rate: 5149.8 req/s (0.2 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 0.0 avg 5163.4 max 10482.4 stddev 3643.6 (116 samples)
+Reply time [ms]: response 299.1 transfer 30.0
+Reply size [B]: header 109.0 content 12.0 footer 1.0 (total 122.0)
+Reply status: 1xx=0 2xx=299518 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.87 system 53.23 (user 8.4% system 91.5% total 99.9%)
+Net I/O: 964.7 KB/s (7.9*10^6 bps)
+
+Errors: total 38 client-timo 0 socket-timo 0 connrefused 0 connreset 38
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=c-c.herokuapp.com --port=80 --uri=/ --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=15000 --num-calls=25
+Maximum connect burst length: 4
+
+Total: connections 15000 requests 372403 replies 372187 test-duration 62.505 s
+
+Connection rate: 240.0 conn/s (4.2 ms/conn, <=7071 concurrent connections)
+Connection time [ms]: min 21.6 avg 11614.2 max 45832.7 median 11008.5 stddev 7126.0
+Connection time [ms]: connect 8.4
+Connection length [replies/conn]: 24.826
+
+Request rate: 5957.9 req/s (0.2 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 0.0 avg 6000.6 max 10426.9 stddev 4121.6 (124 samples)
+Reply time [ms]: response 441.4 transfer 26.0
+Reply size [B]: header 106.0 content 12.0 footer 0.0 (total 118.0)
+Reply status: 1xx=0 2xx=372187 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 6.35 system 56.08 (user 10.2% system 89.7% total 99.9%)
+Net I/O: 1098.6 KB/s (9.0*10^6 bps)
+
+Errors: total 216 client-timo 0 socket-timo 0 connrefused 0 connreset 216
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=c-c.herokuapp.com --port=80 --uri=/ --rate=600 --send-buffer=4096 --recv-buffer=16384 --num-conns=18000 --num-calls=25
+Maximum connect burst length: 5
+
+Total: connections 18000 requests 365874 replies 359872 test-duration 58.331 s
+
+Connection rate: 308.6 conn/s (3.2 ms/conn, <=6158 concurrent connections)
+Connection time [ms]: min 33.4 avg 9330.2 max 47305.1 median 8383.5 stddev 6623.6
+Connection time [ms]: connect 6.1
+Connection length [replies/conn]: 20.409
+
+Request rate: 6272.4 req/s (0.2 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 0.0 avg 6201.7 max 10225.3 stddev 3970.9 (116 samples)
+Reply time [ms]: response 432.5 transfer 22.6
+Reply size [B]: header 108.0 content 24.0 footer 0.0 (total 132.0)
+Reply status: 1xx=0 2xx=352658 3xx=0 4xx=0 5xx=7214
+
+CPU time [s]: user 4.87 system 53.40 (user 8.4% system 91.5% total 99.9%)
+Net I/O: 1226.4 KB/s (10.0*10^6 bps)
+
+Errors: total 6002 client-timo 0 socket-timo 0 connrefused 0 connreset 6002
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --hog --timeout=30 --client=0/1 --server=c-c.herokuapp.com --port=80 --uri=/ --rate=700 --send-buffer=4096 --recv-buffer=16384 --num-conns=21000 --num-calls=25
+Maximum connect burst length: 12
+
+Total: connections 21000 requests 512033 replies 511171 test-duration 63.779 s
+
+Connection rate: 329.3 conn/s (3.0 ms/conn, <=12808 concurrent connections)
+Connection time [ms]: min 227.8 avg 16697.9 max 46560.9 median 16374.5 stddev 6807.9
+Connection time [ms]: connect 342.9
+Connection length [replies/conn]: 24.421
+
+Request rate: 8028.3 req/s (0.1 ms/req)
+Request size [B]: 70.0
+
+Reply rate [replies/s]: min 0.0 avg 8039.1 max 19631.2 stddev 5727.3 (127 samples)
+Reply time [ms]: response 608.9 transfer 60.3
+Reply size [B]: header 108.0 content 7.0 footer 0.0 (total 115.0)
+Reply status: 1xx=0 2xx=350264 3xx=0 4xx=0 5xx=160907
+
+CPU time [s]: user 5.09 system 58.58 (user 8.0% system 91.8% total 99.8%)
+Net I/O: 1461.7 KB/s (12.0*10^6 bps)
+
+Errors: total 862 client-timo 0 socket-timo 0 connrefused 0 connreset 862
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+Zero replies received, test invalid: rate 800
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 900
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1000
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1100
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1200
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1300
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1400
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1500
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1600
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1700
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1800
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 1900
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 2000
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 2100
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 2200
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 2300
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Zero replies received, test invalid: rate 2400
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
+Use of uninitialized value in concatenation (.) or string at /usr/local/bin/autobench line 326.
