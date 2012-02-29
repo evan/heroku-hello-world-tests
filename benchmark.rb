@@ -19,7 +19,7 @@ raise if dynos < 1
 
 low = 20 * dynos
 high = 240 * dynos
-step = 20 * dynos
+step = 10 * dynos
 calls = 25
 test_time = 30
 

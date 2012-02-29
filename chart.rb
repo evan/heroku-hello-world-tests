@@ -8,6 +8,7 @@ range_response_time = 10000
 smoothness=0.6
 
 folder = ARGV[0]
+folder = folder.chomp("/")
 dynos = folder[/(\d+)/, 1].to_i
 
 title = "HTTP hello-world on Heroku with #{dynos} Dyno#{'s' if dynos > 1}"
@@ -43,10 +44,9 @@ File.open('tmp/chart.r', 'w') do |file|
     range_responses = max(dem_req_rate)
     smoothness = #{smoothness}
 
-    quartz('Throughput', 8, 6)
+    png('throughput-#{folder}.png', width=8, height=6, units = 'in', res=300)
     par(mar=c(5,5,5,5))
     xl <- seq(min(dem_req_rate),max(dem_req_rate), (max(dem_req_rate) - min(dem_req_rate))/1000)
-    Sys.sleep(1)
   preamble
 
   labels = []
@@ -97,7 +97,7 @@ File.open('tmp/chart.r', 'w') do |file|
     title(main='Throughput of #{title}')
     axis(1)
     axis(2)
-    legend(range_responses/6.5, range_responses, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22, bg='white')
+    legend(range_responses * 0.1, range_responses * 0.95, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22, bg='white')
 
     par(new=T)
     plot(dem_req_rate, dem_req_rate, ylim=c(0,range_errors), axes=F, ann=F, type='n')
@@ -110,7 +110,7 @@ File.open('tmp/chart.r', 'w') do |file|
   postamble
 
   file.puts <<-preamble
-    quartz('Latency', 8, 6)
+    png('latency-#{folder}.png', width=8, height=6, units = 'in', res=300)
     par(mar=c(5,5,5,5))
   preamble
 
@@ -131,11 +131,10 @@ File.open('tmp/chart.r', 'w') do |file|
     title(main='Latency of #{title}')
     axis(1)
     axis(2, at=axTicks(2), c(0, 10, 100, 1000, 10000))
-    legend(range_responses*0.83, log10(range_response_time)*0.35, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22, bg='white')
+    legend(range_responses*0.8, log10(range_response_time)*0.4, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22, bg='white')
     title(xlab="Requests per second per dyno", ylab="Milliseconds (log scale)")
 
     box()
-    Sys.sleep(30)
   postamble
 end
 
