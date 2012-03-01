@@ -103,8 +103,8 @@ File.open('tmp/chart.r', 'w') do |file|
     plot(dem_req_rate, dem_req_rate, ylim=c(0,range_errors), axes=F, ann=F, type='n')
     axis(4)
 
-    title(xlab="Requests per second per dyno", ylab="Responses per second per dyno [solid line]")
-    title(ylab="% connection errors [dashed line]", line=-34)
+    title(xlab="Requests per second per dyno", ylab="Responses per second per dyno (solid line)")
+    title(ylab="% connection errors (dashed line)", line=-34)
 
     box()
   postamble
