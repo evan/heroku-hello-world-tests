@@ -1,0 +1,1 @@
+heroku config:add JAVA_OPTS="-Xmx384m -Xss512k -XX:+UseCompressedOops -server -d64 -XX:+UseParNewGC"
