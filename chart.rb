@@ -33,22 +33,6 @@ File.open('tmp/chart.csv', 'w') do |file|
 end
 
 File.open('tmp/chart.r', 'w') do |file|
-  file.puts <<-preamble
-    data = read.table('tmp/chart.csv', header=T, sep=',')
-    attach(data)
-    dynos = #{dynos}
-    dem_req_rate = dem_req_rate/dynos
-
-    range_response_time = #{range_response_time}
-    range_errors = #{range_errors}
-    range_responses = max(dem_req_rate)
-    smoothness = #{smoothness}
-
-    png('#{folder}-throughput.png', width=8, height=6, units = 'in', res=150)
-    par(mar=c(5,5,5,5))
-    xl <- seq(min(dem_req_rate),max(dem_req_rate), (max(dem_req_rate) - min(dem_req_rate))/1000)
-  preamble
-
   labels = []
   data["dem_req_rate"].each do |l|
     if l =~ /avg_rep_rate_(.*?)_(.*?)$/
@@ -65,6 +49,25 @@ File.open('tmp/chart.r', 'w') do |file|
 
   colors = %w(red blue black green purple pink cyan magenta orange)[0..labels.size]
 
+  file.puts <<-preamble
+    data = read.table('tmp/chart.csv', header=T, sep=',')
+    attach(data)
+    dynos = #{dynos}
+    dem_req_rate = dem_req_rate/dynos
+
+    range_response_time = #{range_response_time}
+    range_errors = #{range_errors}
+    range_responses = max(dem_req_rate)
+    smoothness = #{smoothness}
+
+    legend_colors = c(#{colors.inspect[1..-2]})
+    legend_labels = c(#{labels.inspect[1..-2]})
+
+    png('#{folder}-throughput.png', width=8, height=6, units = 'in', res=150)
+    par(mar=c(5,5,5,5))
+    xl <- seq(min(dem_req_rate),max(dem_req_rate), (max(dem_req_rate) - min(dem_req_rate))/1000)
+  preamble
+
   i = 0
   data["dem_req_rate"].each do |y|
     next unless y =~ /avg_rep_rate_/
@@ -73,7 +76,7 @@ File.open('tmp/chart.r', 'w') do |file|
       par(new=T)
       plot(dem_req_rate, #{y}, ylim=c(0,range_responses), axes=F, ann=F, type='n')
       smooth = smooth.spline(dem_req_rate, #{y}, spar=smoothness)
-      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=1)
+      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=3, lty=1)
     plotter
     i = i + 1
   end
@@ -85,7 +88,7 @@ File.open('tmp/chart.r', 'w') do |file|
       par(new=T)
       plot(dem_req_rate, #{y}, ylim=c(0,range_errors), axes=F, ann=F, type='n')
       smooth = smooth.spline(dem_req_rate, #{y}, spar=smoothness)
-      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=3)
+      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=3, lty=3)
     plotter
     i = i + 1
   end
@@ -97,7 +100,7 @@ File.open('tmp/chart.r', 'w') do |file|
     title(main='Throughput of #{title}')
     axis(1)
     axis(2)
-    legend(range_responses * 0.1, range_responses * 0.95, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22, bg='white')
+    legend(range_responses * 0.1, range_responses * 0.95, legend_labels, cex=0.8, col=legend_colors, bg='white', fill=legend_colors, border=legend_colors)
 
     par(new=T)
     plot(dem_req_rate, dem_req_rate, ylim=c(0,range_errors), axes=F, ann=F, type='n')
@@ -121,7 +124,7 @@ File.open('tmp/chart.r', 'w') do |file|
       par(new=T)
       plot(dem_req_rate, log10(#{y}), ylim=c(0,log10(range_response_time)), axes=F, ann=F, type='n')
       smooth = smooth.spline(dem_req_rate, log10(#{y}), spar=smoothness)
-      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=1)
+      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=3, lty=1)
     plotter
     i = i + 1
   end
@@ -131,7 +134,7 @@ File.open('tmp/chart.r', 'w') do |file|
     title(main='Latency of #{title}')
     axis(1)
     axis(2, at=axTicks(2), c(0, 10, 100, 1000, 10000))
-    legend(range_responses*0.8, log10(range_response_time)*0.4, c(#{labels.inspect[1..-2]}), cex=0.8, col=c(#{colors.inspect[1..-2]}), pch=21:22, bg='white')
+    legend(range_responses*0.8, log10(range_response_time)*0.4, legend_labels, cex=0.8, col=legend_colors, bg='white', fill=legend_colors, border=legend_colors)
     title(xlab="Requests per second per dyno", ylab="Milliseconds (log scale)")
 
     box()
