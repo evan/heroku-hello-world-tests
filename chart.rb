@@ -44,7 +44,7 @@ File.open('tmp/chart.r', 'w') do |file|
     range_responses = max(dem_req_rate)
     smoothness = #{smoothness}
 
-    png('#{folder}-throughput.png', width=8, height=6, units = 'in', res=300)
+    png('#{folder}-throughput.png', width=8, height=6, units = 'in', res=150)
     par(mar=c(5,5,5,5))
     xl <- seq(min(dem_req_rate),max(dem_req_rate), (max(dem_req_rate) - min(dem_req_rate))/1000)
   preamble
@@ -110,7 +110,7 @@ File.open('tmp/chart.r', 'w') do |file|
   postamble
 
   file.puts <<-preamble
-    png('#{folder}-latency.png', width=8, height=6, units = 'in', res=300)
+    png('#{folder}-latency.png', width=8, height=6, units = 'in', res=150)
     par(mar=c(5,5,5,5))
   preamble
 
