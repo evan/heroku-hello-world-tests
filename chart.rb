@@ -88,7 +88,7 @@ File.open('tmp/chart.r', 'w') do |file|
       par(new=T)
       plot(dem_req_rate, #{y}, ylim=c(0,range_errors), axes=F, ann=F, type='n')
       smooth = smooth.spline(dem_req_rate, #{y}, spar=smoothness)
-      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=3, lty=3)
+      lines(predict(smooth, dem_req_rate), col='#{colors[i]}', lwd=2, lty=3)
     plotter
     i = i + 1
   end
