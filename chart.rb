@@ -44,7 +44,7 @@ File.open('tmp/chart.r', 'w') do |file|
     range_responses = max(dem_req_rate)
     smoothness = #{smoothness}
 
-    png('throughput-#{folder}.png', width=8, height=6, units = 'in', res=300)
+    png('#{folder}-throughput.png', width=8, height=6, units = 'in', res=300)
     par(mar=c(5,5,5,5))
     xl <- seq(min(dem_req_rate),max(dem_req_rate), (max(dem_req_rate) - min(dem_req_rate))/1000)
   preamble
@@ -103,14 +103,14 @@ File.open('tmp/chart.r', 'w') do |file|
     plot(dem_req_rate, dem_req_rate, ylim=c(0,range_errors), axes=F, ann=F, type='n')
     axis(4)
 
-    title(xlab="Requests per second per dyno", ylab="Responses per second per dyno")
-    title(ylab="% connection errors", line=-34)
+    title(xlab="Requests per second per dyno", ylab="Responses per second per dyno [solid line]")
+    title(ylab="% connection errors [dashed line]", line=-34)
 
     box()
   postamble
 
   file.puts <<-preamble
-    png('latency-#{folder}.png', width=8, height=6, units = 'in', res=300)
+    png('#{folder}-latency.png', width=8, height=6, units = 'in', res=300)
     par(mar=c(5,5,5,5))
   preamble
 
